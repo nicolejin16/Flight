@@ -7,7 +7,6 @@ WRO documentation
 <table width="100%" style="border:2px solid #FFC107; border-radius:12px; margin:12px 0;">
   <tr>
     <td width="28%" align="center" style="padding:12px; border-right:6px solid #111;">
-      />
     </td>
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
@@ -22,7 +21,6 @@ WRO documentation
 <table width="100%" style="border:2px solid #FFC107; border-radius:12px; margin:12px 0;">
   <tr>
     <td width="28%" align="center" style="padding:12px; border-right:6px solid #111;">
-      />
     </td>
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
