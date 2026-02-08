@@ -1,6 +1,24 @@
 # SN
 ---
 WRO documentation
+# introduction
+Team flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using our LiDar, 
+
+# Our coach
+<table>
+<tr>
+  <td align="center" width="40%">
+    <img src="" width="100%"/><br>
+  </td>
+
+  <td valign="top" width="60%">
+ - Head coach of Robotics Competitions, including FLL (First LEGO League),  WRO (World Robotics Olympiad) Robo Sports, Future Engineers, and Robo Mission. Led teams in winning multiple national, international robotics, and programming awards.
+  - MSc in Electrical & Computer Engineering from the University of Alberta.
+  - BSc in Mathematics from Peking University.
+  - Founder of Explorer Robotics, a local robotics club in Ajax and Whitby, teaching coding, AI, robotics, etc.
+  </td>
+</tr>
+</table>
 
 # Team Members
 ---
@@ -8,6 +26,11 @@ WRO documentation
   <tr>
     <td width="28%" align="center" style="padding:12px; border-right:6px solid #111;">
     </td>
+    <img 
+      src=""
+      alt="Nicole"
+      width="190"
+      style="border-radius: pink 10px" />
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
       <div><b>Role:</b> Documenter/Programmer</div>
@@ -22,6 +45,11 @@ WRO documentation
   <tr>
     <td width="28%" align="center" style="padding:12px; border-right:6px solid #111;">
     </td>
+    <img 
+      src=""
+      alt="Summer"
+      width="190"
+      style="border-radius: pink 10px" />
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
       <div><b>Role:</b> Builder/Programmer</div>
@@ -31,6 +59,28 @@ WRO documentation
     </td>
   </tr>
 </table>
+
+# Team Photo
+
+<table width="100%" style="border:2px solid #FFC107; border-radius:12px; margin:8px 0;">
+  <tr>
+    <td align="center" style="padding:14px;">
+      <div style="border:2px dashed #FFC107; border-radius:10px; padding:24px; height:320px; display:flex; align-items:center; justify-content:center;">
+        <b><img width="1000" height="750" alt="image" src="" /></b>
+      </div>
+      <div style="margin-top:8px; color:#444;"><em>Team Flight</em></div>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+</br>
+
+---
+
+
+</br>
 
 # Hardware
 ---
@@ -51,3 +101,17 @@ WRO documentation
 
 **Total:** 748.57
 **With Tax:** 845.88
+
+### Tools and Equipment
+| Name | Product | Price (CAD)|
+| ----------- | ----------- | ----------- |
+| 3D Printer | [`Bambu Lab X1 Carbon 3D Printer`](https://genstattu.com/gens-ace-1300mah-2s-7-4v-45c-g-tech-lipo-battery-pack-with-deans-plug/?srsltid=AfmBOoo-qPXzcxuH2dIqTfVYg5ghG9WdKi2b53X-R9M8j3XF_JQlLKJL) | $1289 | 
+| Soldering Kit| [`TOAUTO DS90 Soldering Station`](https://www.amazon.ca/FASTTOBUY-Soldering-Station-194%C2%B0F-896%C2%B0F-Temperature/dp/B082HP4513?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A1QHHBFTGR8LSC&th=1) | $90 |
+| Screws, Screwdriver, Pliers, etc. | n/a | $~35 |  
+| Fillament 1kg | [`EconoFil™ Standard PLA Filament`](https://www.inksmith.ca/collections/filament/products/econofil-standard-pla-filament-black-1-75mm-1-kg?variant=50056253276442) | $26 |  
+
+**Total:** $~1440 *No Tax*
+
+**With Tax:** $~1627.2
+
+
