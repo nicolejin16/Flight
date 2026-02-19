@@ -1,8 +1,8 @@
 # SN
 ---
 WRO documentation
-# introduction
-Team flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using our LiDar, 
+# Introduction
+Team Flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using hardware such as a LiDar, Raspberry Pi 5, and new technology introduced to us like the Arduino Nano.
 
 # Our coach
 <table>
@@ -35,7 +35,7 @@ Team flight is a group of high-school students from Ontario, Canada. This is our
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
       <div><b>Role:</b> Documenter/Programmer</div>
       <p style="margin-top:8px;">
-        <b>About Me:</b> My Name is Nicole, I am 15 years old. I am a figure skater and I also do badminton and do track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
+        <b>About Me:</b> My Name is Nicole, I am 15 years old. I am a figure skater and I also do badminton and track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
       </p>
     </td>
   </tr>
