@@ -28,8 +28,8 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     </td>
     <img 
       alt="Nicole"
-      src="t-photos/nicole.jpg"
       width="190"
+      src="t-photos/nicole.jpg"
       style="border-radius: pink 10px" />
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
@@ -47,8 +47,8 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     </td>
     <img 
       alt="Summer"
-      src="t-photos/summer.jpg"
       width="190"
+      src="t-photos/summer.jpg"
       style="border-radius: pink 10px" />
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
