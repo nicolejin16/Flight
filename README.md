@@ -12,9 +12,9 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 
   <td valign="top" width="60%">
- - Head coach of Robotics Competitions, including FLL (First LEGO League),  WRO (World Robotics Olympiad) Robo Sports, Future Engineers, and Robo Mission. Led teams in winning multiple national, international robotics, and programming awards.
-  - MSc in Electrical & Computer Engineering from the University of Alberta.
-  - BSc in Mathematics from Peking University.
+ - Head coach of Robotics Competitions, including FLL (First LEGO League),  WRO (World Robotics Olympiad) Robo Sports, Future Engineers, and Robo Mission. Led teams in winning multiple national, international robotics, and programming awards. <br>
+  - MSc in Electrical & Computer Engineering from the University of Alberta. <br>
+  - BSc in Mathematics from Peking University.<br>
   - Founder of Explorer Robotics, a local robotics club in Ajax and Whitby, teaching coding, AI, robotics, etc.
   </td>
 </tr>
@@ -54,7 +54,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
       <div><b>Role:</b> Builder/Programmer</div>
       <p style="margin-top:8px;">
-        <b>About Me:</b> MY name is Summer, I am 16 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
+        <b>About Me:</b> My name is Summer, I am 16 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
       </p>
     </td>
   </tr>
@@ -101,6 +101,84 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 
 **Total:** 748.57
 **With Tax:** 845.88
+
+<details>
+<summary><h3>Why we chose these products</h3></summary>
+
+- [RC car battery](#RCcarbattery)
+- [Drive motor](#Drivemotor)
+- [Servo motor](#Servomotor)
+- [ESC](#ESC)
+- [Camera](#Camera)
+- [Raspberry pi 5](#Raspberrypi5)
+- [Arduino](#Arduino)
+- [Chassis](#Chassis)
+- [LIdar](#LIdar)
+- [Button](#Button)
+- [Switch](#Switch)
+- [Power regulator](#Powerregulator)
+
+</details>
+
+# RCcarbattery
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+  ### Physical Qualities
+  | Field | Value |
+  |--------|--------|
+  | Product Title | Gens Ace 1300mAh 2S 7.4V 25C LiPo |
+  | Size | 70.9 × 35.2 × 14.5 mm |
+  | Weight | 90 g |
+  | Type | 2S1P LiPo Battery |
+  | Connector | T-Style (Battery), G-Tech Smart (Balance) |
+
+  </td>
+
+  <td align="center" width="65%">
+    <img src=""/><br>
+    <em>Gens Ace 1300mAh 2S LiPo Battery</em>
+  </td>
+</tr>
+</table>
+<table>
+<tr>
+<td valign="top" width="65%">
+
+### Reasoning of Purchase
+We selected the Gens Ace 1300mAh 2S LiPo for its excellent balance between weight, capacity, and current output.  
+Its 45C continuous (90C burst) discharge rate provides strong acceleration without noticeable voltage drop.  
+The compact design keeps our self-driving car lightweight and well-balanced, ideal for quick maneuvers on WRO courses.  
+Its 7.4V rating offers stable power delivery without the extra wear that 3S (11.1V) packs can cause on smaller ESCs and motors.
+
+---
+
+### Potential Improvements
+- Increase capacity to 1500–1800mAh for longer runtime between charges.  
+- Support faster charging by using a pack with higher C-rate.  
+- Add built-in protection for overcharge or over-discharge safety.  
+
+</br>
+
+</td>
+
+<td valign="top" width="35%">
+  
+# Drivemotor
+# Servomotor
+# ESC
+# Camera
+# Raspberrypi5
+# Arduino
+# Chassis
+# LIdar
+# Button
+# Switch
+# Powerregulator
+
+
+
 
 ### Tools and Equipment
 | Name | Product | Price (CAD)|
