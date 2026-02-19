@@ -8,7 +8,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 <table>
 <tr>
   <td align="center" width="40%">
-    <img src="" width="100%"/><br>
+    <img src="t-photos/coach rice.png" width="100%"/><br>
   </td>
 
   <td valign="top" width="60%">
@@ -27,8 +27,8 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     <td width="28%" align="center" style="padding:12px; border-right:6px solid #111;">
     </td>
     <img 
-      src=""
       alt="Nicole"
+      src="t-photos/nicole.jpg"
       width="190"
       style="border-radius: pink 10px" />
     <td width="72%" style="padding:12px 16px;">
@@ -46,8 +46,8 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     <td width="28%" align="center" style="padding:12px; border-right:6px solid #111;">
     </td>
     <img 
-      src=""
       alt="Summer"
+      src="t-photos/summer.jpg"
       width="190"
       style="border-radius: pink 10px" />
     <td width="72%" style="padding:12px 16px;">
