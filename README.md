@@ -103,7 +103,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 **With Tax:** 845.88
 
 <details>
-<summary><h3>Why we chose these products</h3></summary>
+<h3>Why we chose these products</h3>
 
 - [RC car battery](#RCcarbattery)
 - [Drive motor](#Drivemotor)
