@@ -136,7 +136,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 
   <td align="center" width="65%">
-    <img width="" height="" alt="image" src="MaterialPhoto/battery.jpg"/><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/battery.jpg"/><br>
     <em>Gens Ace 1300mAh 2S LiPo Battery</em>
   </td>
 </tr>
@@ -223,7 +223,7 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/Servomotor.jpg" /><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/Servomotor.jpg" /><br>
     <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
    </td>
 </tr>
@@ -260,7 +260,7 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/ESC.jpg" /><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/ESC.jpg" /><br>
     <em>Furitek Lizard Pro 30A/50A ESC</em>
   </td>
 </tr>
@@ -296,7 +296,7 @@ We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure 
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/Camera.jpg" /><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/Camera.jpg" /><br>
     <em>5/Zero Camera Module (OV5647 Sensor)</em>
   </td>
 </tr>
@@ -336,7 +336,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/RaspberryPi5.jpg" /><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/RaspberryPi5.jpg" /><br>
     <em>RasTech Raspberry Pi 5 Kit (8GB RAM)</em>
   </td>
 </tr>
@@ -379,7 +379,7 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/LiDar.jpg" /><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/LiDar.jpg" /><br>
     <em>LDROBOT D500 LiDAR </em>
   </td>
 </tr>
