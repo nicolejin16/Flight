@@ -172,6 +172,9 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
   
 # Drivemotor
+<table>
+  <td>
+    
  ### Physical Qualities
   | Field          | Value                              |
   |----------------|------------------------------------|
@@ -190,7 +193,6 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 </tr>
 </table>
 
----
 
 <table>
 <tr>
@@ -223,6 +225,9 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
 # Servomotor
+<table>
+  <td>
+    
 ### Physical Qualities
   | Field          | Value                                             |
   |----------------|---------------------------------------------------|
@@ -256,10 +261,6 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 </td>
 </tr>
 </table>
-
-
-
-
 
 # ESC
 # Camera
