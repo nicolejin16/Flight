@@ -136,7 +136,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 
   <td align="center" width="65%">
-    <img width="450" height="450" alt="image" src="MaterialPhoto/battery.jpg"/><br>
+    <img width="300" height="300" alt="image" src="MaterialPhoto/battery.jpg"/><br>
     <em>Gens Ace 1300mAh 2S LiPo Battery</em>
   </td>
 </tr>
