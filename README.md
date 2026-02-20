@@ -136,7 +136,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 
   <td align="center" width="65%">
-    <img src=""/><br>
+    <img width="" height="" alt="image" src=""/><br>
     <em>Gens Ace 1300mAh 2S LiPo Battery</em>
   </td>
 </tr>
@@ -179,7 +179,7 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>Furitek Komodo 1212 motor</em>
   </td>
 </tr>
@@ -223,7 +223,7 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
    </td>
 </tr>
@@ -260,7 +260,7 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>Furitek Lizard Pro 30A/50A ESC</em>
   </td>
 </tr>
@@ -296,7 +296,7 @@ We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure 
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>5/Zero Camera Module (OV5647 Sensor)</em>
   </td>
 </tr>
@@ -336,7 +336,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>RasTech Raspberry Pi 5 Kit (8GB RAM)</em>
   </td>
 </tr>
