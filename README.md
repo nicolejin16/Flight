@@ -179,7 +179,7 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
   <td width="65%" align="center">
-    <img width="600" height="600" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
+    <img width="450" height="450" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
     <em>Furitek Komodo 1212 motor</em>
   </td>
 </tr>
