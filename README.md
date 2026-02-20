@@ -141,9 +141,6 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
 
 ### Why we chose this battery
 We chose the Gens Ace Battery because its lightweight and provides a long run time between charges. 
@@ -187,9 +184,8 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
   </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
+
+
   
 ### Why we chose this motor 
 
@@ -232,9 +228,6 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
    </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
 
 ### Why we chose this motor 
 We chose the Metal Gear digital Micro Servo because it has metal gears, which can withstand sustained high-speed voltage. It also has plastic casing around it which makes it light. Its compact and gives 1.3 ~ 1.6 kg./cm as maximum torque making it smooth and fast. 
@@ -272,9 +265,7 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
   </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
+
   
 ### Why we chose this product
 
