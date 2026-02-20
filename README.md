@@ -179,7 +179,7 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
   <td width="65%" align="center">
-    <img width="100" height="100" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
+    <img width="600" height="600" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
     <em>Furitek Komodo 1212 motor</em>
   </td>
 </tr>
@@ -223,7 +223,7 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/ServoMotor.jpg" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/Servomotor.jpg" /><br>
     <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
    </td>
 </tr>
