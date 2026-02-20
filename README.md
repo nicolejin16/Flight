@@ -113,7 +113,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 - [Raspberry pi 5](#Raspberrypi5)
 - [Arduino](#Arduino)
 - [Chassis](#Chassis)
-- [LiDAR](#LiDAR)
+- [LiDar](#LiDar)
 - [Button](#Button)
 - [Switch](#Switch)
 - [Power regulator](#Powerregulator)
@@ -179,7 +179,7 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
+    <img width="100" height="100" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
     <em>Furitek Komodo 1212 motor</em>
   </td>
 </tr>
@@ -361,7 +361,7 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
   
 # Arduino
 # Chassis
-# LiDAR
+# LiDar
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -379,7 +379,7 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="MaterialPhoto/LiDAR.jpg" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/LiDar.jpg" /><br>
     <em>LDROBOT D500 LiDAR </em>
   </td>
 </tr>
