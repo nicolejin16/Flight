@@ -113,7 +113,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 - [Raspberry pi 5](#Raspberrypi5)
 - [Arduino](#Arduino)
 - [Chassis](#Chassis)
-- [LIdar](#LIdar)
+- [LiDAR](#LiDAR)
 - [Button](#Button)
 - [Switch](#Switch)
 - [Power regulator](#Powerregulator)
@@ -136,14 +136,11 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 
   <td align="center" width="65%">
-    <img src=""/><br>
+    <img width="" height="" alt="image" src=""/><br>
     <em>Gens Ace 1300mAh 2S LiPo Battery</em>
   </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
 
 ### Why we chose this battery
 We chose the Gens Ace Battery because its lightweight and provides a long run time between charges. 
@@ -152,9 +149,6 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 ---
 
-</td>
-
-<td valign="top" width="35%">
 
 ### Additional information
 - Voltage: 7.4V  
@@ -164,16 +158,14 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 - Cell Configuration: 2S1P  
 - Watt Hours: 9.62Wh  
 
-</td>
-</tr>
-</table>
-
 ---
 
   
 # Drivemotor
 <table>
-  <td>
+<tr>
+  <td valign="top" width="35%">
+
     
  ### Physical Qualities
   | Field          | Value                              |
@@ -187,28 +179,21 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>Furitek Komodo 1212 motor</em>
   </td>
 </tr>
 </table>
 
 
-<table>
-<tr>
-<td width="65%" valign="top">
-
+  
 ### Why we chose this motor 
 
 We chose Furitek Micro Komodo brushless motor because its very compact and light-weight making it easier for our car to manouver. It distrbutes torque smoother and more evenly which helps less cogging and better control. 
 
-
 ---
-</td>
 
-<td width="35%" valign="top">
-
-### Performance Specifications
+### Addtional information
 - KV: **3450 rpm/V**  
 - No-load @10V: **0.7 A**  
 - Power: **120 W**  
@@ -218,16 +203,13 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 - Slot/Pole: **12**  
 - Shaft: **1.5 × 6 mm**  
 
-</td>
-</tr>
-</table>
-
 
 
 # Servomotor
 <table>
-  <td>
-    
+<tr>
+  <td valign="top" width="35%">
+
 ### Physical Qualities
   | Field          | Value                                             |
   |----------------|---------------------------------------------------|
@@ -241,16 +223,14 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
   <td width="65%" align="center">
-    <img width="1000" height="666" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="" /><br>
     <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
-  </td>
+   </td>
 </tr>
 </table>
 
 ### Why we chose this motor 
 We chose the Metal Gear digital Micro Servo because it has metal gears, which can withstand sustained high-speed voltage. It also has plastic casing around it which makes it light. Its compact and gives 1.3 ~ 1.6 kg./cm as maximum torque making it smooth and fast. 
-
----
 
 ### Additional information
 - Operating Voltage Range: **4.8V ~ 6.0V**  
@@ -263,11 +243,125 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 </table>
 
 # ESC
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** | Furitek Lizard Pro 30A/50A ESC   |
+  | **Size**          | 28 × 15.5 mm                     |
+  | **Weight**        | 3.7 g                            |
+ 
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="" height="" alt="image" src="" /><br>
+    <em>Furitek Lizard Pro 30A/50A ESC</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+
+We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure that voltage and current is safely delierved to the motor. It's small and manages direction on the open challenge and obstacle challenge. This ESC has a lightweight design, a high capacity and a reliable built-in BEC.
+
+---
+
+### Addtional information
+- BIG BEC: **5V or 5V 2.5A**  
+- Constant current : **30A**  
+- Burst current: **50A**  
+
 # Camera
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** | 5/Zero Camera Module (OV5647 Sensor)   |
+  | **Cable**         | 15 cm Ribbon Cable                     |
+  | **Weight**        | 20 g                                   |
+  | **Size**          | 11.6 x 6.6 x 3.7 cm                    |
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="" height="" alt="image" src="" /><br>
+    <em>5/Zero Camera Module (OV5647 Sensor)</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+
+We chose the 5/Zero Camera Module because we can use the wide angle camera lens to track the regions of interest and limit the amount of blind spots during the open challenge. It's 175° lens is good for wall detection and true to life colors with automatic light adjustment. It's very compatible with the raspberry pi and easy to install. It can withstand heat up to 70° celcius, making it suitable when we need to use it for longer periods of time. 
+
+---
+
+### Addtional information
+- Material: **ABS+ Optimal glass**  
+- Lens Pixel : **5MP**  
+- Focal Length: **3.6mm**
+- Lens Angle: **175°**
+- CMOS Size: **1/2.5inch**
+- Resolution: **2592x1944**
+  
 # Raspberrypi5
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** | RasTech Raspberry Pi 5 Kit (8GB RAM)   |
+  | **Weight**        | 70 g g                                 |
+  | **Size**          | 15 x 9.9 x 3.9 cm                      |
+  | **Comes with**    | Pi 5 Board, Case, Active Cooler, Screwdriver |
+
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="" height="" alt="image" src="" /><br>
+    <em>RasTech Raspberry Pi 5 Kit (8GB RAM)</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+
+The main part of our robot is the Raspberry Pi 5 and it controls the computer vision and LiDAR data interpretation. It is perfect for energy comsumption and processing power, making it suitable for running our Python codes for the open challenge and obstacle challenge. 
+
+---
+
+### Addtional information
+- Manufacturer: **Vemico**  
+- Wireless : **802.11ac Wi-Fi, Bluetooth**  
+- Processor: **Broadcome BCM2712, Quad-Core Cortex-A76 @ 2.4 GHz**
+- RAM: **8 GB LPDDR4X-4266**
+- GPU: **VideoCore VII (Integrated)**
+- Storage: **microSD**
+- Ports: **2x USB 3.0, 2x USB 2.0, 2x micro HDMI, Ethernet, GPIO**
+- OS: **Raspberry Pi OS**
+  
 # Arduino
 # Chassis
-# LIdar
+# LiDAR
 # Button
 # Switch
 # Powerregulator
