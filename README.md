@@ -102,8 +102,8 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 **Total:** 748.57
 **With Tax:** 845.88
 
-<details>
-<h3>Why we chose these products</h3>
+
+<summary><h3>Why we chose these products</h3></summary>
 
 - [RC car battery](#RCcarbattery)
 - [Drive motor](#Drivemotor)
@@ -118,7 +118,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 - [Switch](#Switch)
 - [Power regulator](#Powerregulator)
 
-</details>
+
 
 # RCcarbattery
 <table>
@@ -131,9 +131,8 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   | Product Title | Gens Ace 1300mAh 2S 7.4V 25C LiPo |
   | Size | 70.9 × 35.2 × 14.5 mm |
   | Weight | 90 g |
-  | Type | 2S1P LiPo Battery |
-  | Connector | T-Style (Battery), G-Tech Smart (Balance) |
-
+ 
+  
   </td>
 
   <td align="center" width="65%">
@@ -146,27 +145,122 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 <tr>
 <td valign="top" width="65%">
 
-### Reasoning of Purchase
-We selected the Gens Ace 1300mAh 2S LiPo for its excellent balance between weight, capacity, and current output.  
-Its 45C continuous (90C burst) discharge rate provides strong acceleration without noticeable voltage drop.  
-The compact design keeps our self-driving car lightweight and well-balanced, ideal for quick maneuvers on WRO courses.  
-Its 7.4V rating offers stable power delivery without the extra wear that 3S (11.1V) packs can cause on smaller ESCs and motors.
+### Why we chose this battery
+We chose the Gens Ace Battery because its lightweight and provides a long run time between charges. 
+It allows us to keep the self-driving car well balanced which is optimal for the obstacle challenge and open challenge. 
+The 7.4V gives good acceleration without noticeable voltage drop and offers stable power delivery without extra wear. 
 
 ---
-
-### Potential Improvements
-- Increase capacity to 1500–1800mAh for longer runtime between charges.  
-- Support faster charging by using a pack with higher C-rate.  
-- Add built-in protection for overcharge or over-discharge safety.  
-
-</br>
 
 </td>
 
 <td valign="top" width="35%">
+
+### Additional information
+- Voltage: 7.4V  
+- Capacity: 1300mAh  
+- Discharge Rate: 45C Continuous / 90C Peak  
+- Charge Rate: 5C (6.5A Max)  
+- Cell Configuration: 2S1P  
+- Watt Hours: 9.62Wh  
+
+</td>
+</tr>
+</table>
+
+---
+
   
 # Drivemotor
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** | Furitek Micro Komodo 1212 3450KV |
+  | **Size**          | 15.5 × 20.6 mm                   |
+  | **Weight**        | 17.5 g                           |
+  | **Physical State**| Brushless Outrunner (12-slot)    |
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="1000" height="666" alt="image" src="" /><br>
+    <em>Furitek Komodo 1212 motor</em>
+  </td>
+</tr>
+</table>
+
+---
+
+<table>
+<tr>
+<td width="65%" valign="top">
+
+### Why we chose this motor 
+
+We chose Furitek Micro Komodo brushless motor because its very compact and light-weight making it easier for our car to manouver. It distrbutes torque smoother and more evenly which helps less cogging and better control. 
+
+
+---
+</td>
+
+<td width="35%" valign="top">
+
+### Performance Specifications
+- KV: **3450 rpm/V**  
+- No-load @10V: **0.7 A**  
+- Power: **120 W**  
+- Battery: **2–3S LiPo**  
+- Resistance: **0.16 Ω**  
+- Max Current: **10 A**  
+- Slot/Pole: **12**  
+- Shaft: **1.5 × 6 mm**  
+
+</td>
+</tr>
+</table>
+
+
+
 # Servomotor
+### Physical Qualities
+  | Field          | Value                                             |
+  |----------------|---------------------------------------------------|
+  | **Product Title** | HS-5055MG 11.9g Metal Gear Digital Micro Servo |
+  | **Size**          | 0.89 x 0.45 x 0.94 inches                      |
+  | **Weight**        | 9.5 grams                                      |
+  | **Motor Type**    | 3 Pole Metal Brush Ferrite                     | 
+  
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="1000" height="666" alt="image" src="" /><br>
+    <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
+  </td>
+</tr>
+</table>
+
+### Why we chose this motor 
+We chose the Metal Gear digital Micro Servo because it has metal gears, which can withstand sustained high-speed voltage. It also has plastic casing around it which makes it light. Its compact and gives 1.3 ~ 1.6 kg./cm as maximum torque making it smooth and fast. 
+
+---
+
+### Additional information
+- Operating Voltage Range: **4.8V ~ 6.0V**  
+- Speed (Second @ 60°): **0.20 ~ 0.17**  
+- Maximum Torque Range oz. / in.: **18 ~ 22**  
+- No Load Operating Current draw: **120mA**    
+
+</td>
+</tr>
+</table>
+
+
+
+
+
 # ESC
 # Camera
 # Raspberrypi5
