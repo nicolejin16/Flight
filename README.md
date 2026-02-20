@@ -136,7 +136,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   </td>
 
   <td align="center" width="65%">
-    <img width="" height="" alt="image" src=""/><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/battery.jpg"/><br>
     <em>Gens Ace 1300mAh 2S LiPo Battery</em>
   </td>
 </tr>
@@ -179,7 +179,7 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/DriveMotor.jpg" /><br>
     <em>Furitek Komodo 1212 motor</em>
   </td>
 </tr>
@@ -223,7 +223,7 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/ServoMotor.jpg" /><br>
     <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
    </td>
 </tr>
@@ -260,7 +260,7 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/ESC.jpg" /><br>
     <em>Furitek Lizard Pro 30A/50A ESC</em>
   </td>
 </tr>
@@ -296,7 +296,7 @@ We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure 
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/Camera.jpg" /><br>
     <em>5/Zero Camera Module (OV5647 Sensor)</em>
   </td>
 </tr>
@@ -327,7 +327,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
   | Field          | Value                              |
   |----------------|------------------------------------|
   | **Product Title** | RasTech Raspberry Pi 5 Kit (8GB RAM)   |
-  | **Weight**        | 70 g g                                 |
+  | **Weight**        | 70 g                                  |
   | **Size**          | 15 x 9.9 x 3.9 cm                      |
   | **Comes with**    | Pi 5 Board, Case, Active Cooler, Screwdriver |
 
@@ -336,7 +336,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 
 
   <td width="65%" align="center">
-    <img width="" height="" alt="image" src="" /><br>
+    <img width="" height="" alt="image" src="MaterialPhoto/RaspberryPi5.jpg" /><br>
     <em>RasTech Raspberry Pi 5 Kit (8GB RAM)</em>
   </td>
 </tr>
@@ -362,6 +362,49 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 # Arduino
 # Chassis
 # LiDAR
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** | LDROBOT D500 LiDAR   |
+  | **Weight**        | 45 g                                  |
+  | **Size**          | 54 × 46.3 × 35 mm                     |
+ 
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="" height="" alt="image" src="MaterialPhoto/LiDAR.jpg" /><br>
+    <em>LDROBOT D500 LiDAR </em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+
+ We are going to use the LDROBOT D500 LiDAR for obstacle challenge because it provides accurate range data in every direction up to 12 meters. We are also switching to use the LiDAR instead of the camera because it doesn't depend of good lighting to function properly. With its long scanning range, it can detect obstacles further away and then turn accordinly. 
+
+---
+
+### Addtional information
+- Ranging Distance: **0.03-12m**  
+- Accuracy : **±10 mm (0.3–0.5 m), ±20 mm (0.5–2 m), ±30 mm (2–12 m)**  
+- Scanning Angle: **360°**
+- Scanning frequency: **6-13 Hz**
+- Ranging frequency: **5000Hz**
+- Wavelength: **895 – 915 nm (Typ. 905 nm)**
+- Interface: **UART @ 230400 baud**
+- Ambient Light Tolerance: **up to 60k Lux**
+- Power Supply: **5V**
+- Power Comsumption: **1.45W (290 mA)**
+- Operating Temp: **-10° to 45° C**
+  
 # Button
 # Switch
 # Powerregulator
