@@ -301,9 +301,7 @@ We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure 
   </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
+
   
 ### Why we chose this product
 
@@ -343,9 +341,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
   </td>
 </tr>
 </table>
-<table>
-<tr>
-<td valign="top" width="65%">
+
   
 ### Why we chose this product
 
