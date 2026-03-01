@@ -33,7 +33,6 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     </td>
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
-      <div><b>Role:</b> Documenter/Programmer</div>
       <p style="margin-top:8px;">
         <b>About Me:</b> My Name is Nicole, I am 15 years old. I am a figure skater and I also do badminton and track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
       </p>
@@ -52,7 +51,6 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     </td>
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
-      <div><b>Role:</b> Builder/Programmer</div>
       <p style="margin-top:8px;">
         <b>About Me:</b> My name is Summer, I am 16 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
       </p>
