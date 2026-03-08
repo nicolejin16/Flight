@@ -405,8 +405,76 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
   
 # Button
 # Switch
-# Powerregulator
+ | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** |  DC AC rocker switch  |
+  | **Weight**        |        4g                    |
+  | **Size**          |    1.1cm by 2.1cm by 1.5cm      |
+  |**Brand**          |  	EKYLIN   |
+  |**Material**       | Metal, plastic  |
 
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/" /><br>
+    <em>DC AC rocker switch</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+We choose this switch because it was simple and easy to install. This switch is suitable for AC 125V 10A, AC 250V 6A, DC 12V 20A, DC 24V 10A, DC 36V 6.5A. It was made by an insulated plastic and copper pins, with a mechanical life of more than 8 thousand cycles and an electrical life of more than 10 thousand. The high operating temperature allows it to still work and function properly when it is used for an extended period of time. 
+ 
+
+---
+
+### Addtional information
+- Current rating: **10 amps**
+- Operating voltage:**125 Volts (AC)**
+- Insulation resistance: **100MΩ min**
+- Operating temperature: **-25°C~85°C**
+
+  
+# Powerregulator
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** |  Power supply Expansion board for Raspberry Pi 5  |
+  | **Weight**        |      32g                           |
+  | **Size**          |      65 by 56mm                 |
+
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/" /><br>
+    <em>Power regulator</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+We chose this power supply expansion board because it was tailor made for raspberry-pi. It has many input and output ports and it has efficient voltage stabilization technology, ensuring that the input power supply is stably adjusted for the 5V/5A output, which meets the power needs for the raspberry pi perfectly. Using this power regulator prevents potential low-voltage operation risks and USB interface current limitation. It can also stack directly onto the raspberry pi with screw copper posts, which makes our car more compacts and easier to turn. 
+ 
+
+---
+
+### Addtional information
+- Voltage input: **6~24V**
+- Voltage output: **5V/3A (6V Input), 5V/5A (7~24V input)**
+-  Output interference: **Type-C, PH2.0-2pin*2, DC5.5*2.1, 2*6pim Bent pin header**
+-  Through hole diameter: **M2.5mm**
+  
 
 
 
