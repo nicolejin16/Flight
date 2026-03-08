@@ -405,6 +405,10 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
   
 # Button
 # Switch
+<table>
+<tr>
+  <td valign="top" width="35%">
+
  | Field          | Value                              |
   |----------------|------------------------------------|
   | **Product Title** |  DC AC rocker switch  |
