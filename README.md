@@ -275,7 +275,7 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 
   <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="MaterialPhoto/" /><br>
+    <img width="300" height="300" alt="image" src="MaterialPhoto/PowerRegulator.jpg" /><br>
     <em>Power regulator</em>
   </td>
 </tr>
@@ -534,7 +534,7 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 
 
   <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="MaterialPhoto/" /><br>
+    <img width="300" height="300" alt="image" src="MaterialPhoto/Switch.jpg" /><br>
     <em>DC AC rocker switch</em>
   </td>
 </tr>
@@ -574,7 +574,7 @@ We choose this switch because it was simple and easy to install. This switch is 
 # 3D design and fabrication
 
 | *Component that holds the raspberry pi, arduino and power regulator* |
-| <img src="/models/raspi.stl">  |
+| <img src="models/raspi.stl">  |
 | *Component that holds the camera up*|
 | <img src=""> |
 
