@@ -114,7 +114,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 
 
 
-- <strong>[Mobility](#Mobility)</strong>
+# Mobility
 
 
 - [ESC](##ESC)
