@@ -80,6 +80,17 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 
 </br>
 
+# Complete construction manual
+The WRO Future Engineers is a competition for self-driven vehicles. Students need to design a model of a car, equip it with electromechanical components, and program it so that it can drive autonomously on the track, avoiding obstacles.
+More details about the competition can be found on [the official site of WRO Association](https://wro-association.org/competition/2025-season/#rules).
+
+<img width="700" alt="image" src="" />
+The materials are intended to be built with the [Mkdocs](https://www.mkdocs.org/) site generator.
+
+The example of the site is accessible [here](https://world-robot-olympiad-association.github.io/future-engineers-gs/)
+
+
+
 # Hardware
 ---
 | Name | Product | Price (CAD)|
@@ -101,65 +112,110 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 **With Tax:** 845.88
 
 
-<summary><strong>More details on the products</strong></summary>
 
-- [RC car battery](#RCcarbattery)
-- [Drive motor](#Drivemotor)
-- [Servo motor](#Servomotor)
-- [ESC](#ESC)
+
+- <strong>[Mobility](#Mobility)</strong>
+
+
+- [ESC](##ESC)
+- [Servo motor](##Servomotor)
+- [Drive motor](##Drivemotor)
+- [Power regulator](#Powerregulator)
+- [Chassis](##Chassis)
+- [Steering and Drive system](##Steeringanddrivemotor)
+
+# Power
+- [RC car battery](##RCcarbattery)
+- [Ratings and Wiring](##Ratingsandwiring)
+
+# Sensors and Perception
 - [Camera](#Camera)
 - [Raspberry pi 5](#Raspberrypi5)
 - [Arduino](#Arduino)
-- [Chassis](#Chassis)
 - [LiDar](#LiDar)
-- [Button](#Button)
+
+
+# Extra
 - [Switch](#Switch)
-- [Power regulator](#Powerregulator)
+- [Button](#Button)
 
 
+# Mobility 
 
-# RCcarbattery
+## ESC
 <table>
 <tr>
   <td valign="top" width="35%">
 
-  ### Physical Qualities
-  | Field | Value |
-  |--------|--------|
-  | Product Title | Gens Ace 1300mAh 2S 7.4V 25C LiPo |
-  | Size | 70.9 × 35.2 × 14.5 mm |
-  | Weight | 90 g |
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** | Furitek Lizard Pro 30A/50A ESC   |
+  | **Size**          | 28 × 15.5 mm                     |
+  | **Weight**        | 3.7 g                            |
  
-  
+
   </td>
 
-  <td align="center" width="65%">
-    <img width="300" height="300" alt="image" src="MaterialPhoto/battery.jpg"/><br>
-    <em>Gens Ace 1300mAh 2S LiPo Battery</em>
+
+  <td width="65%" align="center">
+    <img width="400" height="400" alt="image" src="MaterialPhoto/ESC.jpg" /><br>
+    <em>Furitek Lizard Pro 30A/50A ESC</em>
   </td>
 </tr>
 </table>
 
-### Why we chose this battery
-We chose the Gens Ace Battery because its lightweight and provides a long run time between charges. 
-It allows us to keep the self-driving car well balanced which is optimal for the obstacle challenge and open challenge. 
-The 7.4V gives good acceleration without noticeable voltage drop and offers stable power delivery without extra wear. 
+  
+### Why we chose this product
+
+We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure that voltage and current is safely delierved to the motor. It's small and manages direction on the open challenge and obstacle challenge. This ESC has a lightweight design, a high capacity and a reliable built-in BEC.
 
 ---
 
+### Addtional information
+- BIG BEC: **5V or 5V 2.5A**  
+- Constant current : **30A**  
+- Burst current: **50A**
+
+## Servomotor
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+### Physical Qualities
+  | Field          | Value                                             |
+  |----------------|---------------------------------------------------|
+  | **Product Title** | HS-5055MG 11.9g Metal Gear Digital Micro Servo |
+  | **Size**          | 0.89 x 0.45 x 0.94 inches                      |
+  | **Weight**        | 9.5 grams                                      |
+  | **Motor Type**    | 3 Pole Metal Brush Ferrite                     | 
+  
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/Servomotor.jpg" /><br>
+    <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
+   </td>
+</tr>
+</table>
+
+### Why we chose this motor 
+We chose the Metal Gear digital Micro Servo because it has metal gears, which can withstand sustained high-speed voltage. It also has plastic casing around it which makes it light. Its compact and gives 1.3 ~ 1.6 kg./cm as maximum torque making it smooth and fast. 
 
 ### Additional information
-- Voltage: 7.4V  
-- Capacity: 1300mAh  
-- Discharge Rate: 45C Continuous / 90C Peak  
-- Charge Rate: 5C (6.5A Max)  
-- Cell Configuration: 2S1P  
-- Watt Hours: 9.62Wh  
+- Operating Voltage Range: **4.8V ~ 6.0V**  
+- Speed (Second @ 60°): **0.20 ~ 0.17**  
+- Maximum Torque Range oz. / in.: **18 ~ 22**  
+- No Load Operating Current draw: **120mA**    
 
----
+</td>
+</tr>
+</table>
 
-  
-# Drivemotor
+## Drivemotor
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -199,48 +255,9 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 - Resistance: **0.16 Ω**  
 - Max Current: **10 A**  
 - Slot/Pole: **12**  
-- Shaft: **1.5 × 6 mm**  
+- Shaft: **1.5 × 6 mm**
 
-
-
-# Servomotor
-<table>
-<tr>
-  <td valign="top" width="35%">
-
-### Physical Qualities
-  | Field          | Value                                             |
-  |----------------|---------------------------------------------------|
-  | **Product Title** | HS-5055MG 11.9g Metal Gear Digital Micro Servo |
-  | **Size**          | 0.89 x 0.45 x 0.94 inches                      |
-  | **Weight**        | 9.5 grams                                      |
-  | **Motor Type**    | 3 Pole Metal Brush Ferrite                     | 
-  
-
-  </td>
-
-
-  <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="MaterialPhoto/Servomotor.jpg" /><br>
-    <em>HS-5055MG 11.9g Metal Gear Digital Micro Servo</em>
-   </td>
-</tr>
-</table>
-
-### Why we chose this motor 
-We chose the Metal Gear digital Micro Servo because it has metal gears, which can withstand sustained high-speed voltage. It also has plastic casing around it which makes it light. Its compact and gives 1.3 ~ 1.6 kg./cm as maximum torque making it smooth and fast. 
-
-### Additional information
-- Operating Voltage Range: **4.8V ~ 6.0V**  
-- Speed (Second @ 60°): **0.20 ~ 0.17**  
-- Maximum Torque Range oz. / in.: **18 ~ 22**  
-- No Load Operating Current draw: **120mA**    
-
-</td>
-</tr>
-</table>
-
-# ESC
+## Powerregulator
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -249,17 +266,54 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
  ### Physical Qualities
   | Field          | Value                              |
   |----------------|------------------------------------|
-  | **Product Title** | Furitek Lizard Pro 30A/50A ESC   |
-  | **Size**          | 28 × 15.5 mm                     |
-  | **Weight**        | 3.7 g                            |
+  | **Product Title** |  Power supply Expansion board for Raspberry Pi 5  |
+  | **Weight**        |      32g                           |
+  | **Size**          |      65 by 56mm                 |
+
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/" /><br>
+    <em>Power regulator</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+We chose this power supply expansion board because it was tailor made for raspberry-pi. It has many input and output ports and it has efficient voltage stabilization technology, ensuring that the input power supply is stably adjusted for the 5V/5A output, which meets the power needs for the raspberry pi perfectly. Using this power regulator prevents potential low-voltage operation risks and USB interface current limitation. It can also stack directly onto the raspberry pi with screw copper posts, which makes our car more compacts and easier to turn. 
+ 
+
+---
+
+### Addtional information
+- Voltage input: **6~24V**
+- Voltage output: **5V/3A (6V Input), 5V/5A (7~24V input)**
+-  Output interference: **Type-C, PH2.0-2pin*2, DC5.5*2.1, 2*6pim Bent pin header**
+-  Through hole diameter: **M2.5mm**
+
+# Chassis
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** |    RC Drift Car 1:24 Scale |
+  | **Weight**        |      110g                           |
+  | **Size**          |       21 x 9.5 x 6 cm               |
  
 
   </td>
 
 
   <td width="65%" align="center">
-    <img width="400" height="400" alt="image" src="MaterialPhoto/ESC.jpg" /><br>
-    <em>Furitek Lizard Pro 30A/50A ESC</em>
+    <img width="300" height="300" alt="image" src="" /><br>
+    <em>  RC Drift Car 1:24 Scale</em>
   </td>
 </tr>
 </table>
@@ -267,16 +321,66 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
   
 ### Why we chose this product
 
-We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure that voltage and current is safely delierved to the motor. It's small and manages direction on the open challenge and obstacle challenge. This ESC has a lightweight design, a high capacity and a reliable built-in BEC.
-
 ---
 
 ### Addtional information
-- BIG BEC: **5V or 5V 2.5A**  
-- Constant current : **30A**  
-- Burst current: **50A**  
+- Ranging Distance: **0.03-12m**
 
-# Camera
+## Steeringanddrivemotor
+
+# Power
+
+
+## RCcarbattery
+<table>
+<tr>
+  <td valign="top" width="35%">
+
+  ### Physical Qualities
+  | Field | Value |
+  |--------|--------|
+  | Product Title | Gens Ace 1300mAh 2S 7.4V 25C LiPo |
+  | Size | 70.9 × 35.2 × 14.5 mm |
+  | Weight | 90 g |
+ 
+  
+  </td>
+
+  <td align="center" width="65%">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/battery.jpg"/><br>
+    <em>Gens Ace 1300mAh 2S LiPo Battery</em>
+  </td>
+</tr>
+</table>
+
+### Why we chose this battery
+We chose the Gens Ace Battery because its lightweight and provides a long run time between charges. 
+It allows us to keep the self-driving car well balanced which is optimal for the obstacle challenge and open challenge. 
+The 7.4V gives good acceleration without noticeable voltage drop and offers stable power delivery without extra wear. 
+
+---
+
+
+### Additional information
+- Voltage: 7.4V  
+- Capacity: 1300mAh  
+- Discharge Rate: 45C Continuous / 90C Peak  
+- Charge Rate: 5C (6.5A Max)  
+- Cell Configuration: 2S1P  
+- Watt Hours: 9.62Wh  
+
+---
+
+##  Ratingsandwiring
+
+
+
+
+
+
+# Sensors and Perception
+
+## Camera
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -315,7 +419,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 - CMOS Size: **1/2.5inch**
 - Resolution: **2592x1944**
   
-# Raspberrypi5
+## Raspberrypi5
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -357,9 +461,12 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 - Ports: **2x USB 3.0, 2x USB 2.0, 2x micro HDMI, Ethernet, GPIO**
 - OS: **Raspberry Pi OS**
   
-# Arduino
-# Chassis
-# LiDar
+## Arduino
+
+ 
+
+
+## LiDar
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -386,7 +493,7 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
   
 ### Why we chose this product
 
- We are going to use the LDROBOT D500 LiDAR for obstacle challenge because it provides accurate range data in every direction up to 12 meters. We are also switching to use the LiDAR instead of the camera because it doesn't depend of good lighting to function properly. With its long scanning range, it can detect obstacles further away and then turn accordinly. 
+ We are going to use the LDROBOT D500 LiDAR for obstacle challenge because it provides accurate range data in every direction up to 12 meters. We are also switching to use the LiDAR instead of the camera because it doesn't depend of good lighting to function properly. With its long scanning range, it can detect obstacles further away and then turn accordingly. 
 
 ---
 
@@ -402,9 +509,14 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 - Power Supply: **5V**
 - Power Comsumption: **1.45W (290 mA)**
 - Operating Temp: **-10° to 45° C**
+
+
+# Extra
   
-# Button
-# Switch
+## Button
+
+
+## Switch
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -442,47 +554,12 @@ We choose this switch because it was simple and easy to install. This switch is 
 - Operating temperature: **-25°C~85°C**
 
   
-# Powerregulator
-<table>
-<tr>
-  <td valign="top" width="35%">
-
-    
- ### Physical Qualities
-  | Field          | Value                              |
-  |----------------|------------------------------------|
-  | **Product Title** |  Power supply Expansion board for Raspberry Pi 5  |
-  | **Weight**        |      32g                           |
-  | **Size**          |      65 by 56mm                 |
-
-
-  </td>
-
-
-  <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="MaterialPhoto/" /><br>
-    <em>Power regulator</em>
-  </td>
-</tr>
-</table>
 
   
-### Why we chose this product
-We chose this power supply expansion board because it was tailor made for raspberry-pi. It has many input and output ports and it has efficient voltage stabilization technology, ensuring that the input power supply is stably adjusted for the 5V/5A output, which meets the power needs for the raspberry pi perfectly. Using this power regulator prevents potential low-voltage operation risks and USB interface current limitation. It can also stack directly onto the raspberry pi with screw copper posts, which makes our car more compacts and easier to turn. 
- 
-
----
-
-### Addtional information
-- Voltage input: **6~24V**
-- Voltage output: **5V/3A (6V Input), 5V/5A (7~24V input)**
--  Output interference: **Type-C, PH2.0-2pin*2, DC5.5*2.1, 2*6pim Bent pin header**
--  Through hole diameter: **M2.5mm**
-  
 
 
 
-### Tools and Equipment
+# Tools and Equipment
 | Name | Product | Price (CAD)|
 | ----------- | ----------- | ----------- |
 | 3D Printer | [`Bambu Lab X1 Carbon 3D Printer`](https://genstattu.com/gens-ace-1300mah-2s-7-4v-45c-g-tech-lipo-battery-pack-with-deans-plug/?srsltid=AfmBOoo-qPXzcxuH2dIqTfVYg5ghG9WdKi2b53X-R9M8j3XF_JQlLKJL) | $1289 | 
@@ -494,4 +571,76 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 **With Tax:** $~1627.2
 
+# 3D design and fabrication
+
+
+| :--:  |
+| *Component that holds the raspberry pi, arduino and power regulator* |
+| <img src="">  |
+| *Component that holds the camera up*|
+| <img src=""> |
+
+### Overview
+- a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
+- Our 3D print held major components to the function of our robot like the arduino, raspberry pi, power regulator, camera, and liDar.
+- Fabrication in Onshape, printing using Prusa MK4 with PLA filament
+
+### Printing information
+
+| Setting | Value |
+|----------|--------|
+| Printer | [`Prusa MK4`](https://www.prusa3d.com/product/original-prusa-mk4s/?utm_source=google&utm_medium=cpc&utm_campaign=EN-CA_Search_Text_Brand&utm_id=804628075&gad_source=1&gad_campaignid=804628075&gbraid=0AAAAADkiZoOd65faDM0bHRhBQj7ky7NcF&gclid=CjwKCAjwhe3OBhABEiwA6392zNFtJI5Mq8r8JDHuuQUJW8VSS6PgJko4EIIhgfwNkfE0DJi9G7rwxBoCjJwQAvD_BwE) |
+| Material | PLA |
+| Nozzle Temperature | 230 °C |
+| Bed Temperature | 65 °C (Textured PEI Plate) |
+| Filament Diameter | 1.75 mm |
+| Flow Ratio | 0.96 |
+| Max Volumetric Speed | 12 mm³/s |
+| Layer Height | 0.2 mm |
+| Nozzle Diameter | 0.4 mm |
+| Infill Density | 15 % |
+
+We chose PLA because of it's easy accessibility and affordable cost, allowing quick iteration without sacrificing accuracy. It's proformance is reliable, and it is easy to print again if there was a mistake. 
+
+### Photo gallery 
+<table>
+  <tr>
+    <td align="center" style="border:1px solid #ddd; padding:15px;">
+    <img width="563" height="750" alt="image" src="" /><br/>
+      <em><strong>Front View </strong></em>
+    </td>
+    <td align="center" style="border:1px solid #ddd; padding:15px;">
+      <img width="563" height="750" alt="image" src="" /><br/>
+      <em><strong>Back view</strong></em>
+    </td>
+    <td align="center" style="border:1px solid #ddd; padding:15px;">
+     <img width="563" height="750" alt="image" src="" /><br/>
+      <em><strong>Top View</strong></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="border:1px solid #ddd; padding:15px;">
+     <img width="563" height="750" alt="image" src="" /><br/>
+      <em><strong>Left Side View</strong></em>
+    </td>
+    <td align="center" style="border:1px solid #ddd; padding:15px;">
+      <img width="563" height="750" alt="image" src="" /><br/>
+      <em><strong>Right Side View</strong></em>
+    </td>
+    <td align="center" style="border:1px solid #ddd; padding:15px;">
+      <img width="563" height="750" alt="image" src="" /><br/>
+      <em><strong>Bottom View</strong></em>
+    </td>
+  </tr>
+</table>
+<br>
+---
+
+
+
+
+
+
+
+  
 
