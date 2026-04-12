@@ -573,10 +573,8 @@ We choose this switch because it was simple and easy to install. This switch is 
 
 # 3D design and fabrication
 
-
-| :--:  |
 | *Component that holds the raspberry pi, arduino and power regulator* |
-| <img src="">  |
+| <img src="/models/raspi.stl">  |
 | *Component that holds the camera up*|
 | <img src=""> |
 
