@@ -84,7 +84,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 The WRO Future Engineers is a competition for self-driven vehicles. Students need to design a model of a car, equip it with electromechanical components, and program it so that it can drive autonomously on the track, avoiding obstacles.
 More details about the competition can be found on [the official site of WRO Association](https://wro-association.org/competition/2025-season/#rules).
 
-<img width="700" alt="image" src="" />
+<img width="700" alt="image" src="MaterialPhoto/fe-map.png" />
 The materials are intended to be built with the [Mkdocs](https://www.mkdocs.org/) site generator.
 
 The example of the site is accessible [here](https://world-robot-olympiad-association.github.io/future-engineers-gs/)
@@ -118,19 +118,19 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 
 
 - [ESC](#ESC)
-- [Servo motor](#Servomotor)
-- [Drive motor](#Drivemotor)
-- [Power regulator](#Powerregulator)
+- [Servo motor](#Servo-motor)
+- [Drive motor](#Drive-motor)
+- [Power regulator](#Power-regulator)
 - [Chassis](#Chassis)
-- [Steering and Drive system](#Steeringanddrivemotor)
+- [Steering and Drive system](#Steering-and-drive-motor)
 
 # Power
-- [RC car battery](#RCcarbattery)
-- [Ratings and Wiring](#Ratingsandwiring)
+- [RC car battery](#RC-car-battery)
+- [Ratings and Wiring](#Ratings-and-wiring)
 
 # Sensors and Perception
 - [Camera](#Camera)
-- [Raspberry pi 5](#Raspberrypi5)
+- [Raspberry pi 5](#Raspberrypi-5)
 - [Arduino](#Arduino)
 - [LiDar](#LiDar)
 
@@ -181,7 +181,7 @@ We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure 
 
 [click here to return to links](#mobility)
 
-## Servomotor
+## Servo motor
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -220,7 +220,8 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 
 [click here to return to links](#mobility)
 
-## Drivemotor
+
+## Drive motor
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -264,7 +265,7 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 
 [click here to return to links](#mobility)
 
-## Powerregulator
+## Power regulator
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -339,13 +340,13 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 [click here to return to links](#mobility)
 
-## Steeringanddrivemotor
+## Steering and drive motor
 
 [click here to return to links](#mobility)
 # Power
 
 
-## RCcarbattery
+## RC car battery
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -387,7 +388,20 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 ---
 
-##  Ratingsandwiring
+##  Ratings and wiring
+
+| Component | Voltage | Normal Current Draw | Max Current Draw | Normal Power | Max Power |
+|-|-|-|-|-|-|
+| Camera         | 5 V     | 0.16 A   | 0.20 A | 0.80 W  | 1.00 W  |
+| Furitek Lizard Pro ESC      | 7.4 V   | 0.007 A  | 0.10 A | 0.05 W  | 0.74 W  |
+| Furitek Micro Komodo Motor  | 7.4 V   | 0.95 A   | 10.0 A | 7.00 W  | 74.0 W  |
+|  Servo Motor       | 5 V     | 0.10 A   | 0.70 A | 0.50 W  | 3.50 W  |
+| MicroSD, LEDs,     | 5 V     | 0.12 A   | 0.30 A | 0.60 W  | 1.50 W  |
+| Raspberry Pi 5              | 5 V     | 0.55 A   | 2.00 A | 2.75 W  | 10.0 W  |
+| Expansion Board             | 5 V     | 0.12 A   | 0.50 A | 0.60 W  | 2.50 W  |
+| Totals                      | —       | —        | —      | ~12.5 W   | ~95 W   |
+
+<br>
 
 
 
@@ -439,7 +453,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 [click here to return to links](#mobility)
   
   
-## Raspberrypi5
+## Raspberrypi 5
 <table>
 <tr>
   <td valign="top" width="35%">
