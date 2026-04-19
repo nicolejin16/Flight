@@ -171,12 +171,15 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 
 We chose Furitek Lizard Pro ESC because it controls the motors speed and ensure that voltage and current is safely delierved to the motor. It's small and manages direction on the open challenge and obstacle challenge. This ESC has a lightweight design, a high capacity and a reliable built-in BEC.
 
+
 ---
 
 ### Addtional information
 - BIG BEC: **5V or 5V 2.5A**  
 - Constant current : **30A**  
 - Burst current: **50A**
+
+[click here to return to links](#mobility)
 
 ## Servomotor
 <table>
@@ -214,6 +217,8 @@ We chose the Metal Gear digital Micro Servo because it has metal gears, which ca
 </td>
 </tr>
 </table>
+
+[click here to return to links](#mobility)
 
 ## Drivemotor
 <table>
@@ -257,6 +262,8 @@ We chose Furitek Micro Komodo brushless motor because its very compact and light
 - Slot/Pole: **12**  
 - Shaft: **1.5 × 6 mm**
 
+[click here to return to links](#mobility)
+
 ## Powerregulator
 <table>
 <tr>
@@ -294,7 +301,9 @@ We chose this power supply expansion board because it was tailor made for raspbe
 -  Output interference: **Type-C, PH2.0-2pin*2, DC5.5*2.1, 2*6pim Bent pin header**
 -  Through hole diameter: **M2.5mm**
 
-# Chassis
+[click here to return to links](#mobility)
+
+## Chassis
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -321,13 +330,18 @@ We chose this power supply expansion board because it was tailor made for raspbe
   
 ### Why we chose this product
 
+
+
 ---
 
 ### Addtional information
 - Ranging Distance: **0.03-12m**
 
+[click here to return to links](#mobility)
+
 ## Steeringanddrivemotor
 
+[click here to return to links](#mobility)
 # Power
 
 
@@ -369,6 +383,8 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 - Cell Configuration: 2S1P  
 - Watt Hours: 9.62Wh  
 
+[click here to return to links](#mobility)
+
 ---
 
 ##  Ratingsandwiring
@@ -377,6 +393,7 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
 
+[click here to return to links](#mobility)
 
 # Sensors and Perception
 
@@ -418,6 +435,9 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 - Lens Angle: **175°**
 - CMOS Size: **1/2.5inch**
 - Resolution: **2592x1944**
+
+[click here to return to links](#mobility)
+  
   
 ## Raspberrypi5
 <table>
@@ -460,6 +480,8 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 - Storage: **microSD**
 - Ports: **2x USB 3.0, 2x USB 2.0, 2x micro HDMI, Ethernet, GPIO**
 - OS: **Raspberry Pi OS**
+
+[click here to return to links](#mobility)
   
 ## Arduino
 
@@ -510,12 +532,13 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 - Power Comsumption: **1.45W (290 mA)**
 - Operating Temp: **-10° to 45° C**
 
+[click here to return to links](#mobility)
 
 # Extra
   
 ## Button
 
-
+[click here to return to links](#mobility)
 ## Switch
 <table>
 <tr>
@@ -553,7 +576,7 @@ We choose this switch because it was simple and easy to install. This switch is 
 - Insulation resistance: **100MΩ min**
 - Operating temperature: **-25°C~85°C**
 
-  
+[click here to return to links](#mobility)
 
   
 
