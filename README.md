@@ -117,16 +117,16 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 # Mobility
 
 
-- [ESC](##ESC)
-- [Servo motor](##Servomotor)
-- [Drive motor](##Drivemotor)
+- [ESC](#ESC)
+- [Servo motor](#Servomotor)
+- [Drive motor](#Drivemotor)
 - [Power regulator](#Powerregulator)
-- [Chassis](##Chassis)
-- [Steering and Drive system](##Steeringanddrivemotor)
+- [Chassis](#Chassis)
+- [Steering and Drive system](#Steeringanddrivemotor)
 
 # Power
-- [RC car battery](##RCcarbattery)
-- [Ratings and Wiring](##Ratingsandwiring)
+- [RC car battery](#RCcarbattery)
+- [Ratings and Wiring](#Ratingsandwiring)
 
 # Sensors and Perception
 - [Camera](#Camera)
