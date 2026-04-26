@@ -384,11 +384,14 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 - Cell Configuration: 2S1P  
 - Watt Hours: 9.62Wh  
 
+The battery is secured to our robot by tape on the bottom. 
 [click here to return to links](#mobility)
 
 ---
 
 ##  Ratings and wiring
+
+### power ratings table
 
 | Component | Voltage | Normal Current Draw | Max Current Draw | Normal Power | Max Power |
 |-|-|-|-|-|-|
@@ -399,9 +402,35 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 | MicroSD, LEDs,     | 5 V     | 0.12 A   | 0.30 A | 0.60 W  | 1.50 W  |
 | Raspberry Pi 5              | 5 V     | 0.55 A   | 2.00 A | 2.75 W  | 10.0 W  |
 | Expansion Board             | 5 V     | 0.12 A   | 0.50 A | 0.60 W  | 2.50 W  |
-| Totals                      | —       | —        | —      | ~12.5 W   | ~95 W   |
 
 <br>
+
+Our Gens Ace 1300 mAh 7.4V  Lipo Battery provides plenty of power to our car as shown in the power ratings table above/ 
+This will ensure that all our properties will run smoothly and provide stable voltage for the Raspberry Pi, controller, sensors, and periherals. 
+
+### Electrical wiring
+<div algn="center">
+<table>
+  <tr>
+    <td style="border: 200px solid black; padding: 5px;">
+      <img width="1190" height="845" alt="SCH_Schematic1_1-P1_2025-09-07" src="" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+### Components
+
+- Raspberry Pi 5
+- Expansion Board
+- Camera
+- Servo Motor
+- ESC (Electronic Speed Controller)
+- Motor
+- Battery
+- Switch
+
 
 
 
@@ -498,9 +527,42 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 [click here to return to links](#mobility)
   
 ## Arduino
+<table>
+<tr>
+  <td valign="top" width="35%">
 
+    
+ ### Physical Qualities
+  | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** |   Arduino nano 33 BLE REV2 |
+  | **Weight**        |  5g                                  |
+  | **Size**          |   45mm x 18mm                 |
  
 
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/ArduinoNano.jpg" /><br>
+    <em> Arduino nano 33 BLE REV2</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+The 4 PWM pins makes it versatile for various embedded applications/ It's super compatible with the arduino IDE, making the prohramming smooth and seamless. 
+ 
+
+---
+
+### Addtional information
+- Logic level voltage: **3.3V**
+- input
+
+After we soldered the arduino, it was secured tightly to our robot using double sided tape on the USB ports of the raspberry pi. 
+[click here to return to links](#mobility)
 
 ## LiDar
 <table>
@@ -670,12 +732,3 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 </table>
 <br>
 ---
-
-
-
-
-
-
-
-  
-
