@@ -8,6 +8,27 @@ from picamera2 import Picamera2
 import os
 import signal
 import serial
+from enum import Enum
+
+class State(Enum):
+    WALL_FOLLOW = 1
+    CORNER_TURN = 2
+
+state = State.WALL_FOLLOW
+
+prev_error = 0
+
+# Debounce
+trigger_count_left = 0
+trigger_count_right = 0
+TRIGGER_FRAMES = 5
+
+# Trigger memory
+trigger_side = None  # "left", "right", "both"
+
+# Timing
+corner_start_time = 0
+MIN_CORNER_TIME = 10  # seconds
 
 # Handle debug mode
 n = len(sys.argv)
@@ -27,9 +48,13 @@ picam2.configure("preview")
 picam2.start()
 time.sleep(1)
 
+center_servo = 1500
+min_servo = 1000
+max_servo = 2000
 
 # Proportional gain constant (tune this)
 Kp = 0.075
+Kd = 0
 
 # Color thresholds
 lower_black = np.array([0, 0, 0])
@@ -46,8 +71,8 @@ roiRight = (440, 260, 200, 50)
 roiOrange = (220, 240, 240, 50)
 roiBlue = (220, 240, 240, 50)
 # Start motors
-arduino.write(b'@M1600')
-arduino.write(b'@S1500')
+arduino.write(b'@M1600\n')
+arduino.write(b'@S1500\n')
 
 orange = 0
 orange_line_detected = False
@@ -90,24 +115,83 @@ while True:
         else:
             right_area = total_area
 
-    # === Proportional Control ===
+# === STATE MACHINE DRIVING ===
+
+left_trigger = left_area < 550
+right_trigger = right_area < 550
+
+# ==========================
+# STATE: WALL_FOLLOW
+# ==========================
+if state == State.WALL_FOLLOW:
+    # Debounce logic
+    if left_trigger:
+        trigger_count_left += 1
+    elif right_trigger:
+        trigger_count_right += 1
+    else:
+        trigger_count_left = 0
+        trigger_count_right = 0
+
+    # Enter CORNER_TURN
+    if trigger_count_right >= TRIGGER_FRAMES:
+        trigger_side = "left"
+    if trigger_count_right >= TRIGGER_FRAMES:
+        trigger_side = "right"
+
+        state = State.CORNER_TURN
+        corner_start_time = time.time()
+        trigger_count = 0
+
+        print(f"Entering CORNER_TURN ({trigger_side})")
+        arduino.write(b'@M1550\n')
+
+    # Normal wall following (Pd-control)
     error = left_area - right_area
-    correction = int(Kp * error)
+    correction = int(Kp * error + Kd * (error - prev_error))
     new_servo_pw = center_servo + correction
     new_servo_pw = max(min_servo, min(max_servo, new_servo_pw))  # Clamp
+    prev_error = error
+    arduino.write(f'@S{new_servo_pw}\n'.encode())
 
-    if left_area + right_area > 0:
-        #print(f"P-Control: error={error}, correction={correction}, servo={new_servo_pw}")
-        arduino.write(b'@M1600')
-        arduino.write(f'@S{new_servo_pw}'.encode())
-    else:
-        arduino.write(b'@M1500')
+
+# =========================
+# STATE: CORNER_TURN
+# =========================
+elif state == State.CORNER_TURN:
+    elapsed = time.time() - corner_start_time
+
+    # --- TURNING BEHAVIOR (you can tune this) ---
+    if trigger_side == "left":
+        # turn RIGHT
+        #arduino.write(b'@M1550\n')
+        arduino.write(f'@S{center_servo - 200\n}'.encode())
+
+    elif trigger_side == "right":
+        # turn LEFT
+        #arduino.write(b'@M1550\n')
+        arduino.write(f'@S{center_servo + 200}\n'.encode())
+
+    # --- EXIT CONDITIONS ---
+    recovered = False
+
+    if trigger_side == "left":
+        recovered = left_area > 1200
+    elif trigger_side == "right":
+        recovered = right_area > 1200
+
+    if recovered and elapsed >= MIN_CORNER_TIME:
+        state = State.WALL_FOLLOW
+        prev_error = 0
+        trigger_side = None
+        print("Exiting CORNER_TURN → WALL_FOLLOW")
+        arduino.write(b'@M1600\n')
 
     # === Orange Line Detection ===
     cv2.rectangle(frame, (roiOrange[0], roiOrange[1]), (roiOrange[0]+roiOrange[2], roiOrange[1]+roiOrange[3]), (0, 255, 255), 2)
     roi2 = frame[roiOrange[1]:roiOrange[1]+roiOrange[3], roiOrange[0]:roiOrange[0]+roiOrange[2]]
     orange_mask = cv2.inRange(roi2, lower_orange, upper_orange)
-    contours_orange, _ = cv2.findContours(orange_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    #contours_orange, _ = cv2.findContours(orange_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     orange_pixels = cv2.countNonZero(orange_mask)
 
     if orange_pixels > 100:
@@ -123,7 +207,7 @@ while True:
     cv2.rectangle(frame, (roiBlue[0], roiBlue[1]), (roiBlue[0]+roiBlue[2], roiBlue[1]+roiBlue[3]), (0, 255, 255), 2)
     roi2 = frame[roiBlue[1]:roiBlue[1]+roiBlue[3], roiBlue[0]:roiBlue[0]+roiBlue[2]]
     blue_mask = cv2.inRange(roi2, lower_blue, upper_blue)
-    contours_blue, _ = cv2.findContours(blue_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    #contours_blue, _ = cv2.findContours(blue_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     blue_pixels = cv2.countNonZero(blue_mask)
 
     if blue_pixels > 80:
@@ -132,8 +216,8 @@ while True:
             last_blue_time = time.time()
             print(f'{blue} blue lines detected.')
             blue_line_detected = True
-        else:
-            blue_line_detected = False
+    else:
+        blue_line_detected = False
 
 
     # === Debug Output ===
@@ -148,6 +232,6 @@ while True:
             break
 
 # Cleanup
-arduino.write(b'@M1500')
+arduino.write(b'@M1500\n')
 picam2.stop()
 
