@@ -122,7 +122,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 - [Drive motor](#Drive-motor)
 - [Power regulator](#Power-regulator)
 - [Chassis](#Chassis)
-- [Steering and Drive system](#Steering-and-drive-motor)
+- [Steering and Drive system](#Steering-and-drive-system)
 
 # Power
 - [RC car battery](#RC-car-battery)
@@ -340,7 +340,15 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 [click here to return to links](#mobility)
 
-## Steering and drive motor
+## Steering and drive system
+### Steering
+
+### Drive system 
+Our car uses a real whieel drive (RWD), meaning that the motor's power is transmitted to the back wheels rather than the front. This configuration provides many benefits to the car:
+- Better weight distribution. The front wheels handle all the steering, and the rear wheels help with propulsion, whith helps the car remain more balanced when accelerating and turning. 
+- Provides a stronger grip on surfaces such as the map. Since the rear of the robot has more weight, the back wheels get pressed down into the ground more, providing more traction and grip. 
+- The front wheels are used only for steering, this is so the car can turn more precisely aince theres no interference from the motor. 
+
 
 [click here to return to links](#mobility)
 # Power
@@ -552,14 +560,18 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
 
   
 ### Why we chose this product
-The 4 PWM pins makes it versatile for various embedded applications/ It's super compatible with the arduino IDE, making the prohramming smooth and seamless. 
+The 4 PWM pins makes it versatile for various embedded applications/ It's super compatible with the arduino IDE, making the programming smooth and seamless. It weighs only 5 grams which minimizes load on the chassis, allowing for better acceleration and agility. 
  
 
 ---
 
 ### Addtional information
 - Logic level voltage: **3.3V**
-- input
+- Input voltage: **5V to 18V**
+- Digital I/O Pins: **14**
+- Clock speed: **64 MHz**
+- Flash memory: **1MB**
+
 
 After we soldered the arduino, it was secured tightly to our robot using double sided tape on the USB ports of the raspberry pi. 
 [click here to return to links](#mobility)
