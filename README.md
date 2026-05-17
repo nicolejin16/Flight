@@ -744,3 +744,34 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 </table>
 <br>
 ---
+
+# Open Challenge
+## Overview
+The Open Challenge is designed to test a robot’s ability to autonomously navigate a closed-loop course using only the black walls as guidance. The robot must detect walls, align itself, make smooth turns at corners, and complete 3 laps without manual intervention in under 3 minutes. The main focus is on path-following and code accuracy.
+### Game Map
+
+<table>
+  <tr>
+    <td style="border: 200px solid black; padding: 5px;">
+      <img width="1054" height="303" alt="image" src=""/>
+    </td>
+  </tr>
+</table>
+
+
+## Code
+
+---
+# Obstacle Challenge 
+## Overview
+The obstacle challenge is a much more difficult version of the open challenge. In this challenge, there are red and green traffic pillars that the car must navigate around, as well as a parking lot. A red pillar indicates that the car should turn right to pass the pillar, and a green pillar indicates a left turn to pass the pillar. The car starts in a straight section or parking lot (for extra points) and must navigate 3 laps around the track avoiding obstacles. Once the 3 laps are finished the car can perform a difficult parallel parking maneuver for additional points. The parking lot is 1.5x the length of the car. In our case the parking lot will be about 24.5cm.
+### Game Map
+<table>
+  <tr>
+    <td style="border: 200px solid black; padding: 5px;">
+      <img width="1054" height="303" alt="image" src=""/>
+    </td>
+  </tr>
+</table>
+
+## Code 
