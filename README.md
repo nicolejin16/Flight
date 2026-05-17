@@ -114,7 +114,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 
 
 
-# Mobility
+## Mobility
 
 
 - [ESC](#ESC)
@@ -124,20 +124,24 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 - [Chassis](#Chassis)
 - [Steering and Drive system](#Steering-and-drive-system)
 
-# Power
+## Power
 - [RC car battery](#RC-car-battery)
 - [Ratings and Wiring](#Ratings-and-wiring)
 
-# Sensors and Perception
+## Sensors and Perception
 - [Camera](#Camera)
 - [Raspberry pi 5](#Raspberrypi-5)
 - [Arduino](#Arduino)
 - [LiDar](#LiDar)
 
 
-# Extra
+## Extra
 - [Switch](#Switch)
 - [Button](#Button)
+
+## Code
+-[Open Challenge](#Open-Challenge)
+- [Obstacle Challenge](#Obstacle-Challenge)
 
 
 # Mobility 
@@ -399,7 +403,7 @@ The battery is secured to our robot by tape on the bottom.
 
 ##  Ratings and wiring
 
-### power ratings table
+### Power ratings table
 
 | Component | Voltage | Normal Current Draw | Max Current Draw | Normal Power | Max Power |
 |-|-|-|-|-|-|
