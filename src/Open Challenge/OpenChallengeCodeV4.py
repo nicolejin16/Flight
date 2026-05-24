@@ -42,7 +42,12 @@ TRIGGER_FRAMES = 5
 # Timing
 
 #corner_start_time = 0
-#MIN_CORNER_TIME = 5
+#MIN_CORNER_TIME = 2
+
+# IMU heading tracking
+last_heading_time = time.time()
+HEADING_INTERVAL = 1.0 # request heading from Arduino every 1 second
+imu_heading = 0.0
 
 # Handle debug mode
 n = len(sys.argv)
@@ -67,15 +72,14 @@ center_servo = 90
 min_servo = 60
 max_servo = 140
 
-# Proportional gain constant (tune this)
+# Proportional gain constant q
 Kp = 0.0075
 Kd = 0
 
 counter = 0
 
-# Color thresholds
 lower_black = np.array([0, 0, 0])
-upper_black = np.array([100, 100, 100])
+upper_black = np.array([140, 130, 140])
 
 lower_orange = np.array([0, 40, 130])
 upper_orange = np.array([60, 160, 255])
@@ -83,8 +87,8 @@ upper_orange = np.array([60, 160, 255])
 lower_blue = np.array([100, 0, 0])
 upper_blue = np.array([255, 80, 80])
 # Regions of interest
-roiLeft = (20, 205, 200, 100)
-roiRight = (420, 205, 200, 100)
+roiLeft = (70, 220, 200, 80)
+roiRight = (440, 220, 200, 80)
 roiOrange = (220, 240, 240, 50)
 roiBlue = (220, 240, 240, 50)
 # Start motor
@@ -103,7 +107,30 @@ turning_angle = 0
 cooldown_seconds = 2.5
 
 while True:
+    now = time.monotonic()
+    
     frame = picam2.capture_array()
+
+        # Periodically request IMU heading from Arduino
+    if time.time() - last_heading_time >= HEADING_INTERVAL:
+        send('@H\n')
+        last_heading_time = time.time()
+        time.sleep(0.02) # brief wait so response arrives before we read
+    # Read and process all incoming serial data
+    if arduino.in_waiting > 0:
+        try:
+            raw = arduino.read(arduino.in_waiting).decode('utf-8', errors='ignore')
+            for line in raw.splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    imu_heading = float(line)
+                    print(f'[IMU Heading] {imu_heading:.2f}°')
+                except ValueError:
+                    pass # ignore any non-numeric lines
+            except Exception:
+                pass # silently ignore malformed or partial data
     
     if arduino.in_waiting > 0:
         arduino.read(arduino.in_waiting)
@@ -159,7 +186,7 @@ while True:
         # Enter CORNER_TURN_:
         if trigger_count_left >= TRIGGER_FRAMES or trigger_count_right >= TRIGGER_FRAMES:
             state = State.CORNER_TURN
-            #corner_start_time = time.time()
+            corner_start_time = now
             send(b'@M1630\n')
         else:
             # Normal wall following (Pd-control)
@@ -181,7 +208,7 @@ while True:
     # STATE: CORNER_TURN
     # =========================
     elif state == State.CORNER_TURN:
-        #elapsed = time.time() - corner_start_time
+        #elapsed = now - (corner_start_time if corner_start_time is not None else now)
         
         # --- TURNING BEHAVIOR (you can tune this) ---
         if trigger_count_left >= 5:
@@ -202,6 +229,7 @@ while True:
         
         # --- EXIT CONDITIONS ---
         recovered = False
+        #time_ok = elapsed >= MIN_CORNER_TIME
 
         if trigger_count_left >= 5:
             recovered = left_area > 1000
@@ -215,7 +243,7 @@ while True:
             trigger_side = None
             trigger_count_right = 0
             trigger_count_left = 0
-            #print("Exiting CORNER_TURN → WALL_FOLLOW")
+            print("WALL_FOLLOW")
             send(b'@M1630\n')
 
         
