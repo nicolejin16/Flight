@@ -104,7 +104,7 @@ last_blue_time = time.time()
 
 turning_angle = 0
 
-cooldown_seconds = 2.5
+cooldown_seconds = 1.5
 
 while True:
     now = time.monotonic()
@@ -113,7 +113,7 @@ while True:
 
         # Periodically request IMU heading from Arduino
     if time.time() - last_heading_time >= HEADING_INTERVAL:
-        send('@H\n')
+        send(b'@H\n')
         last_heading_time = time.time()
         time.sleep(0.02) # brief wait so response arrives before we read
     # Read and process all incoming serial data
@@ -129,8 +129,8 @@ while True:
                     print(f'[IMU Heading] {imu_heading:.2f}°')
                 except ValueError:
                     pass # ignore any non-numeric lines
-            except Exception:
-                pass # silently ignore malformed or partial data
+        except Exception:
+            pass # silently ignore malformed or partial data
     
     if arduino.in_waiting > 0:
         arduino.read(arduino.in_waiting)
