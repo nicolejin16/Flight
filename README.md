@@ -1046,6 +1046,9 @@ picam2.stop()
 ```
 
 ---
+## Breakdown
+The course for the open challenge can either be set up with a wide (100cm) or narrow (60cm) configuration. In the wide setup, the black walls are spaced farther and therefore can make the robots ROI's readings more difficult to detect the walls. The narrow configuration creates the opposite problem, and the walls occupy too much of the camera. Our primary navigation for the open challenge is with the camera. The camera captures multiple frames per second and stays on track by the ROI's. The ROI's are small rectangles placed at the edge of both sides. There is also a rectangular ROI in the middle of the screen used to detected the orange and blue lines when the robot makes its way around the map so it can stop when the three laps has been completed. The code is under "# === Orange Line Detection ===". So the side ROI's are used to detect black pixels, and the middle one is coded to detect blue and orange pixels. 
+
 # Obstacle Challenge 
 ## Overview
 The obstacle challenge is a much more difficult version of the open challenge. In this challenge, there are red and green traffic pillars that the car must navigate around, as well as a parking lot. A red pillar indicates that the car should turn right to pass the pillar, and a green pillar indicates a left turn to pass the pillar. The car starts in a straight section or parking lot (for extra points) and must navigate 3 laps around the track avoiding obstacles. Once the 3 laps are finished the car can perform a difficult parallel parking maneuver for additional points. The parking lot is 1.5x the length of the car. In our case the parking lot will be about 24.5cm.
