@@ -700,7 +700,7 @@ We choose this switch because it was simple and easy to install. This switch is 
 # 3D design and fabrication
 
 | *Component that holds the raspberry pi, arduino and power regulator* |
-<iframe src="https://sketchfab.com/models/raspi.stl/embed" width="300" height="300"></iframe>
+<img width="300" height="300" alt="image" src="models/raspi.stl" /> 
 | *Component that holds the camera up*|
 <img width="300" height="300" alt="image" src="models/cameraV2.stl" /> 
 
