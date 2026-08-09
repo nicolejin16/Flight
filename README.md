@@ -140,7 +140,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 - [Button](#Button)
 
 ## Code
--[Open Challenge](#Open-Challenge)
+- [Open Challenge](#Open-Challenge)
 - [Obstacle Challenge](#Obstacle-Challenge)
 
 
