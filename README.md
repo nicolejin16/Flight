@@ -140,7 +140,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 - [Button](#Button)
 
 ## Code
--[Open Challenge](#Open-Challenge)
+- [Open Challenge](#Open-Challenge)
 - [Obstacle Challenge](#Obstacle-Challenge)
 
 
@@ -326,7 +326,7 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 
   <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="" /><br>
+    <img width="300" height="300" alt="image" src="MaterialPhoto/chassis.png" /><br>
     <em>  RC Drift Car 1:24 Scale</em>
   </td>
 </tr>
@@ -346,6 +346,17 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 ## Steering and drive system
 ### Steering
+Our chassis didn't have a large enough steering angle, but with many adjustments, we hollowed a larger compartment and cut limitations so our chassis can turn sharper around pillars and corners. In the hollowed compartment, we put both our motors, keeping it compact and saving space. 
+
+- Both left and right wheels turn at the same angle, reducing imbalance and oversteering.
+- By keeping it compact more of the weight is focused lower, making uncontrolled movement minimized and more predictable steering.
+- Larger steering angle makes last minute navigation easier around pillars and walls. 
+
+### How the car moves 
+
+When the battery provides power, the ESC manages the electricity sent to the motor. The motor turns this controlled flow of electricity into rotational motion, which makes the car's wheels spin. By changing the voltage and current through the ESC, we can control the car's speed and direction, enabling it to move forward, backward, accelerate, slow down, or reverse.
+
+At the same time, the servo motor handles steering. It changes the angle of the front wheels through the steering system, allowing the car to turn left or right accurately.
 
 ### Drive system 
 Our car uses a real whieel drive (RWD), meaning that the motor's power is transmitted to the back wheels rather than the front. This configuration provides many benefits to the car:
@@ -689,9 +700,9 @@ We choose this switch because it was simple and easy to install. This switch is 
 # 3D design and fabrication
 
 | *Component that holds the raspberry pi, arduino and power regulator* |
-| <img width="300" height="300" alt="image" src="models/raspi.stl" />  |
+<img width="300" height="300" alt="image" src="models/raspi.stl" /> 
 | *Component that holds the camera up*|
-| <img width="300" height="300" alt="image" src="models/cameraV2.stl" /> |
+<img width="300" height="300" alt="image" src="models/cameraV2.stl" /> 
 
 ### Overview
 - a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
@@ -757,7 +768,7 @@ The Open Challenge is designed to test a robot’s ability to autonomously navig
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1054" height="303" alt="image" src=""/>
+      <img width="1054" height="303" alt="image" src="maps/openchallengemap.png"/>
     </td>
   </tr>
 </table>
@@ -1057,7 +1068,7 @@ The obstacle challenge is a much more difficult version of the open challenge. I
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1054" height="303" alt="image" src=""/>
+      <img width="1054" height="303" alt="image" src="maps/obstaclechallengemap.png"/>
     </td>
   </tr>
 </table>
