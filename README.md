@@ -689,9 +689,9 @@ We choose this switch because it was simple and easy to install. This switch is 
 # 3D design and fabrication
 
 | *Component that holds the raspberry pi, arduino and power regulator* |
-| <img src="models/raspi.stl">  |
+| <img width="300" height="300" alt="image" src="models/raspi.stl" />  |
 | *Component that holds the camera up*|
-| <img src=""> |
+| <img width="300" height="300" alt="image" src="models/cameraV2.stl" /> |
 
 ### Overview
 - a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
@@ -1048,6 +1048,7 @@ picam2.stop()
 ---
 ## Breakdown
 The course for the open challenge can either be set up with a wide (100cm) or narrow (60cm) configuration. In the wide setup, the black walls are spaced farther and therefore can make the robots ROI's readings more difficult to detect the walls. The narrow configuration creates the opposite problem, and the walls occupy too much of the camera. Our primary navigation for the open challenge is with the camera. The camera captures multiple frames per second and stays on track by the ROI's. The ROI's are small rectangles placed at the edge of both sides. There is also a rectangular ROI in the middle of the screen used to detected the orange and blue lines when the robot makes its way around the map so it can stop when the three laps has been completed. The code is under "# === Orange Line Detection ===". So the side ROI's are used to detect black pixels, and the middle one is coded to detect blue and orange pixels. 
+
 
 # Obstacle Challenge 
 ## Overview
