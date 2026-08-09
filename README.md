@@ -326,7 +326,7 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 
   <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="" /><br>
+    <img width="300" height="300" alt="image" src="MaterialPhoto/chassis.png" /><br>
     <em>  RC Drift Car 1:24 Scale</em>
   </td>
 </tr>
@@ -757,7 +757,7 @@ The Open Challenge is designed to test a robot’s ability to autonomously navig
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1054" height="303" alt="image" src=""/>
+      <img width="1054" height="303" alt="image" src="maps/openchallengemap.png"/>
     </td>
   </tr>
 </table>
@@ -1057,7 +1057,7 @@ The obstacle challenge is a much more difficult version of the open challenge. I
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1054" height="303" alt="image" src=""/>
+      <img width="1054" height="303" alt="image" src="maps/obstaclechallengemap.png"/>
     </td>
   </tr>
 </table>
