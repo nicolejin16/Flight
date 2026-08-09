@@ -346,6 +346,17 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
 ## Steering and drive system
 ### Steering
+Our chassis didn't have a large enough steering angle, but with many adjustments, we hollowed a larger compartment and cut limitations so our chassis can turn sharper around pillars and corners. In the hollowed compartment, we put both our motors, keeping it compact and saving space. 
+
+- Both left and right wheels turn at the same angle, reducing imbalance and oversteering.
+- By keeping it compact more of the weight is focused lower, making uncontrolled movement minimized and more predictable steering.
+- Larger steering angle makes last minute navigation easier around pillars and walls. 
+
+### How the car moves 
+
+When the battery provides power, the ESC manages the electricity sent to the motor. The motor turns this controlled flow of electricity into rotational motion, which makes the car's wheels spin. By changing the voltage and current through the ESC, we can control the car's speed and direction, enabling it to move forward, backward, accelerate, slow down, or reverse.
+
+At the same time, the servo motor handles steering. It changes the angle of the front wheels through the steering system, allowing the car to turn left or right accurately.
 
 ### Drive system 
 Our car uses a real whieel drive (RWD), meaning that the motor's power is transmitted to the back wheels rather than the front. This configuration provides many benefits to the car:
