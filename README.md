@@ -1,8 +1,19 @@
 # SN
 ---
 WRO documentation
+<div align="center">
+<img src="media/repository-photos/teambeesbanner.png/" alt="teambeesbanner">
+</div>
+
+
+<p align="center">
+  <img src="" /> </img>
+</p>
+
+<a href="YouTube link"><img src="" height="20" alt="name of YouTube link">
+
 # Introduction
-Team Flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using hardware such as a LiDar, Raspberry Pi 5, and new technology introduced to us like the Arduino Nano.
+Team Flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using hardware such as a LiDAR, Raspberry Pi 5, and new technology introduced to us like the Arduino Nano.
 
 # Our coach
 <table>
@@ -34,7 +45,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
       <p style="margin-top:8px;">
-        <b>About Me:</b> My Name is Nicole, I am 15 years old. I am a figure skater and I also do badminton and track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
+        <b>About Me:</b> My Name is Nicole, I am 16 years old. I am a figure skater and I also do badminton and track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
       </p>
     </td>
   </tr>
@@ -52,7 +63,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
       <p style="margin-top:8px;">
-        <b>About Me:</b> My name is Summer, I am 16 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
+        <b>About Me:</b> My name is Summer, I am 17 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
       </p>
     </td>
   </tr>
@@ -103,7 +114,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 | Raspberry Pi 5 8GB | [`Raspberry Pi 5`](https://www.amazon.ca/RasTech-Raspberry-Pi-refroidisseur-inclus/dp/B0DQX6JPVM/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.hjnwoY6Di307ZP-ZXjYU_AmgdoLMC7RS47PGeKtJmhqRtp_k-4b8vYkHuUVwKECxKvsLZj0iaGIogN3I9EAYbOkkLP1mmeFujPf3GbJ2CMFnLyrk19mzn-ImTWQS0CIHPOqaTKx-Ctd1F3jpptYNuSYsMmNl7eHo3YlLS2jAkPG1yBTzWywAtMLtqPDw7h7ECNBYaTd1mWMee3tTjRJN-xMqYHvdCTQPK7nYLTwDF-fwzPk8SNqpdFTZ5PaxoJsqiCrI71GJKbHEhh34FjN7lpqwol6Q_mREib5Uh598Ms4.l7oHUekQqBFhZC9q36eu2RnnsxuvyE01mn0uqJH1tZQ&dib_tag=se&gad_source=1&hvadid=668188233052&hvdev=c&hvexpln=0&hvlocphy=9000756&hvnetw=g&hvocijid=14781734050545810589--&hvqmt=e&hvrand=14781734050545810589&hvtargid=kwd-916491466264&hydadcr=24946_13702398&keywords=raspberry+pi+5+8gb&mcid=370191aac5dd30dfa56c4c13736323b1&qid=1757276490&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) | $170.00 |
 | Arduino | [`Arduino Nano 33 BLE Rev2`](https://www.digikey.ca/en/products/detail/arduino/ABX00071/22478340) | $33.41 |
 | Chassis | [`Gyro Version Drift car 1:24 scale`](https://www.aliexpress.com/item/1005010792530908.html?spm=a2g0o.productlist.main.5.463crzyUrzyUt5&algo_pvid=6c0e6086-1ca4-4045-a5bf-e94f1b148090&algo_exp_id=6c0e6086-1ca4-4045-a5bf-e94f1b148090-6&pdp_ext_f=%7B%22order%22%3A%2218%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21CAD%21160.71%2173.43%21%21%21806.80%21368.66%21%402103129f17699789369692968ee635%2112000053523542620%21sea%21CA%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A7a4ca4d%3Bm03_new_user%3A-29895%3BpisId%3A5000000197831940&curPageLogUid=QLqgTPOX4VtS&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010792530908%7C_p_origin_prod%3A) | $163.05 | 
-| Lidar | [`LDROBOT D500 LiDar Kit`](https://ca.robotshop.com/products/hiwonder-ld19-d500-lidar-developer-kit-360-dtof-laser-scanner-supports-ros1-2-raspberry-pi-jetson-nano?gad_source=1&gad_campaignid=20151193383&gbraid=0AAAAAD_f_xz33tsuMhLsCb4CO_w6kKcep&gclid=EAIaIQobChMI6sqDkubKkgMV1sKfCR2WSxPKEAAYASAAEgIzUfD_BwE) | $149.99 |
+| LiDAR | [`LDROBOT D500 LiDAR Kit`](https://ca.robotshop.com/products/hiwonder-ld19-d500-lidar-developer-kit-360-dtof-laser-scanner-supports-ros1-2-raspberry-pi-jetson-nano?gad_source=1&gad_campaignid=20151193383&gbraid=0AAAAAD_f_xz33tsuMhLsCb4CO_w6kKcep&gclid=EAIaIQobChMI6sqDkubKkgMV1sKfCR2WSxPKEAAYASAAEgIzUfD_BwE) | $149.99 |
 | Button | [`Push Switch button 12V 20A Blue LED`](https://www.amazon.ca/dp/B0B96VBFKF/ref=sspa_dk_detail_0?pd_rd_i=B0B96VBFKF&pd_rd_w=jJrLV&content-id=amzn1.sym.516c2169-755e-413a-a38a-68230f4ab66f&pf_rd_p=516c2169-755e-413a-a38a-68230f4ab66f&pf_rd_r=GXSC5RH0ZW4SWHP7KPNV&pd_rd_wg=1JJUB&pd_rd_r=9eb475ae-3436-4910-917b-e7a7d2e68897&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1) | $12.99 |
 | Switch | [`DC AC rocker switch`](https://www.amazon.ca/Suitable-125V-250V-Motorcycle-Disconnect-Dispenser/dp/B087PYW9BS) | $5.99 |
 | Power regulator | [`Power supply expansion board for raspberry pi 5`](https://ca.robotshop.com/products/yahboom-power-supply-expansion-board-raspberry-pi-5) | $17.54 |
@@ -132,7 +143,7 @@ The example of the site is accessible [here](https://world-robot-olympiad-associ
 - [Camera](#Camera)
 - [Raspberry pi 5](#Raspberrypi-5)
 - [Arduino](#Arduino)
-- [LiDar](#LiDar)
+- [LiDAR](#LiDAR)
 
 
 ## Extra
@@ -334,8 +345,12 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
   
 ### Why we chose this product
+We chose this chassis because it was easy to take apart and use as a sturdy base for our robot. It was lightweight and many parts could easily be taken apart to make space for the motors and battery to fit inside. Its dimensions are long enough to include every component, but doesn't hinder the functionality of the robot. The wheels are made of grippy materials, making the robot be able to turn easily and with accuracy. The base if flat, making it easy to mount our 3D printed pieces that hold up our camera and raspberry Pi. 
 
-
+### Placement choice for components
+- The camera is placed at a level where it's able to see incoming walls, pillars, and obstacles at a reasonable distance without being to high causing an imbalance. It's placed at an angle where it includes the space in front of the robot, but not what on the robot.
+- The LiDAR is placed at the front of the robot to ensure it is detected well in advance so our robot is prepare to avoid the oncoming obstacle from all directions. By placing it in the front, it doesn't need to calculate the difference between the obstacle and the bumper. Placing the LiDAR at a low point prevents anything from blocking the sensors. 
+- By putting the motors, esc, and battery close together under the raspberry Pi, it reduces the amount of wires around the robot, making it more organized and clean. We can also place the wires underneath, saving space and preventing it from getting in the way or getting loose.
 
 ---
 
@@ -400,14 +415,14 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
 ### Additional information
-- Voltage: 7.4V  
-- Capacity: 1300mAh  
-- Discharge Rate: 45C Continuous / 90C Peak  
-- Charge Rate: 5C (6.5A Max)  
-- Cell Configuration: 2S1P  
-- Watt Hours: 9.62Wh  
+- Voltage: **7.4V**  
+- Capacity: **1300mAh**  
+- Discharge Rate: **45C Continuous / 90C Peak**  
+- Charge Rate: **5C (6.5A Max)**
+- Cell Configuration: **2S1P**  
+- Watt Hours: **9.62Wh**  
 
-The battery is secured to our robot by tape on the bottom. 
+The battery is secured to our robot by tape on the bottom. <br>
 [click here to return to links](#mobility)
 
 ---
@@ -429,8 +444,9 @@ The battery is secured to our robot by tape on the bottom.
 <br>
 
 Our Gens Ace 1300 mAh 7.4V  Lipo Battery provides plenty of power to our car as shown in the power ratings table above/ 
-This will ensure that all our properties will run smoothly and provide stable voltage for the Raspberry Pi, controller, sensors, and periherals. 
-
+This will ensure that all our properties will run smoothly and provide stable voltage for the Raspberry Pi, controller, sensors, and periherals. <br>
+**Estimated runtime (Active driving run):** 20-28 minutes <br>
+**Estimated runtime (Idle/bench testing):** 45-60 minutes <br> <br>
 ### Electrical wiring
 <div algn="center">
 <table>
@@ -576,7 +592,9 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
   
 ### Why we chose this product
 The 4 PWM pins makes it versatile for various embedded applications/ It's super compatible with the arduino IDE, making the programming smooth and seamless. It weighs only 5 grams which minimizes load on the chassis, allowing for better acceleration and agility. 
- 
+
+### How the arduino and raspberry Pi communicate
+The Raspberry Pi handles the LiDAR's mapping, vision processing, and path planning while offloading low-level GPIO operations (ESC PWM signaling, steering servo adjustments, wheel encoder interrupts) to the Nano. Connecting the Arduino Nano directly to the Pi 5's USB 3.0 port provides both power and a clean USB-Serial interface without needing external voltage level shifters. The Pi 5's GPIO pins strictly operate at 3.3V. Interfacing 5V sensors directly through the Nano's native 5V-tolerant analog/digital pins prevents accidental overvoltage damage to the Pi. 
 
 ---
 
@@ -588,10 +606,10 @@ The 4 PWM pins makes it versatile for various embedded applications/ It's super 
 - Flash memory: **1MB**
 
 
-After we soldered the arduino, it was secured tightly to our robot using double sided tape on the USB ports of the raspberry pi. 
+After we soldered the arduino, it was secured tightly to our robot using double sided tape on the USB ports of the raspberry pi. <br>
 [click here to return to links](#mobility)
 
-## LiDar
+## LiDAR
 <table>
 <tr>
   <td valign="top" width="35%">
@@ -640,7 +658,43 @@ After we soldered the arduino, it was secured tightly to our robot using double 
 # Extra
   
 ## Button
+<table>
+<tr>
+  <td valign="top" width="35%">
 
+ | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** |   2 Pin Panel Push Button |
+  | **Weight**        |            22.68 g                |
+  | **Size**          |     16.51 x 0.51 x 0.51 cm   |
+  |**Brand**          |   MakerSpot  |
+  | **Material**      |  tile |
+
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/button.jpg" /><br>
+    <em>2 pin push button</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+We chose this button for our raspberry Pi because it's very simple yet easy incorporate onto our robot. Since adding this button was a last minute detail, it's lightweight and small design allows an easy attachment without getting in the way of the other robot components. 
+ 
+
+---
+
+### Addtional information
+- Current rating: **50 milliamps**
+- Terminal: **solder**
+- Contact material: **copper**
+- Mounting type: **through hole mount**
+- Operating mode: **manual**
+  
 [click here to return to links](#mobility)
 ## Switch
 <table>
@@ -699,10 +753,10 @@ We choose this switch because it was simple and easy to install. This switch is 
 
 # 3D design and fabrication
 
-| *Component that holds the raspberry pi, arduino and power regulator* |
-<img width="300" height="300" alt="image" src="models/raspi.stl" /> 
-| *Component that holds the camera up*|
-<img width="300" height="300" alt="image" src="models/cameraV2.stl" /> 
+| *Component that holds the raspberry pi, arduino and power regulator* | <br>
+<img width="300" height="300" alt="image" src="models/raspi.stl" /> <br>
+| *Component that holds the camera up*| <br>
+<img width="300" height="300" alt="image" src="models/cameraV2.stl" />  <br>
 
 ### Overview
 - a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
