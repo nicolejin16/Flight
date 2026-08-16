@@ -784,29 +784,29 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 <table>
   <tr>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-    <img width="563" height="750" alt="image" src="v-photos/front.jpeg" /><br/>
+    <img width="563" height="750" alt="image" src="v-photos /front.jpeg" /><br/>
       <em><strong>Front View </strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-      <img width="563" height="750" alt="image" src="v-photos/back.jpeg" /><br/>
+      <img width="563" height="750" alt="image" src="v-photos /back.jpeg" /><br/>
       <em><strong>Back view</strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-     <img width="563" height="750" alt="image" src="v-photos/top.jpeg" /><br/>
+     <img width="563" height="750" alt="image" src="v-photos /top.jpeg" /><br/>
       <em><strong>Top View</strong></em>
     </td>
   </tr>
   <tr>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-     <img width="563" height="750" alt="image" src="v-photos/left.jpeg" /><br/>
+     <img width="563" height="750" alt="image" src="v-photos /left.jpeg" /><br/>
       <em><strong>Left Side View</strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-      <img width="563" height="750" alt="image" src="v-photos/right.jpeg" /><br/>
+      <img width="563" height="750" alt="image" src="v-photos /right.jpeg" /><br/>
       <em><strong>Right Side View</strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-      <img width="563" height="750" alt="image" src="v-photos/bottom.jpeg" /><br/>
+      <img width="563" height="750" alt="image" src="v-photos /bottom.jpeg" /><br/>
       <em><strong>Bottom View</strong></em>
     </td>
   </tr>
