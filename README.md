@@ -334,8 +334,12 @@ We chose this power supply expansion board because it was tailor made for raspbe
 
   
 ### Why we chose this product
+We chose this chassis because it was easy to take apart and use as a sturdy base for our robot. It was lightweight and many parts could easily be taken apart to make space for the motors and battery to fit inside. Its dimensions are long enough to include every component, but doesn't hinder the functionality of the robot. The wheels are made of grippy materials, making the robot be able to turn easily and with accuracy. The base if flat, making it easy to mount our 3D printed pieces that hold up our camera and raspberry Pi. 
 
-
+### Placement choice for components
+- The camera is placed at a level where it's able to see incoming walls, pillars, and obstacles at a reasonable distance without being to high causing an imbalance. It's placed at an angle where it includes the space in front of the robot, but not what on the robot.
+- The LiDAR is placed at the front of the robot to ensure it is detected well in advance so our robot is prepare to avoid the oncoming obstacle from all directions. By placing it in the front, it doesn't need to calculate the difference between the obstacle and the bumper. Placing the LiDAR at a low point prevents anything from blocking the sensors. 
+- By putting the motors, esc, and battery close together under the raspberry Pi, it reduces the amount of wires around the robot, making it more organized and clean. We can also place the wires underneath, saving space and preventing it from getting in the way or getting loose.
 
 ---
 
@@ -576,7 +580,9 @@ The main part of our robot is the Raspberry Pi 5 and it controls the computer vi
   
 ### Why we chose this product
 The 4 PWM pins makes it versatile for various embedded applications/ It's super compatible with the arduino IDE, making the programming smooth and seamless. It weighs only 5 grams which minimizes load on the chassis, allowing for better acceleration and agility. 
- 
+
+### How the arduino and raspberry Pi communicate
+The Raspberry Pi handles the LiDAR's mapping, vision processing, and path planning while offloading low-level GPIO operations (ESC PWM signaling, steering servo adjustments, wheel encoder interrupts) to the Nano. Connecting the Arduino Nano directly to the Pi 5's USB 3.0 port provides both power and a clean USB-Serial interface without needing external voltage level shifters. The Pi 5's GPIO pins strictly operate at 3.3V. Interfacing 5V sensors directly through the Nano's native 5V-tolerant analog/digital pins prevents accidental overvoltage damage to the Pi. 
 
 ---
 
@@ -699,10 +705,10 @@ We choose this switch because it was simple and easy to install. This switch is 
 
 # 3D design and fabrication
 
-| *Component that holds the raspberry pi, arduino and power regulator* |
-<img width="300" height="300" alt="image" src="models/raspi.stl" /> 
-| *Component that holds the camera up*|
-<img width="300" height="300" alt="image" src="models/cameraV2.stl" /> 
+| *Component that holds the raspberry pi, arduino and power regulator* | <br>
+<img width="300" height="300" alt="image" src="models/raspi.stl" /> <br>
+| *Component that holds the camera up*| <br>
+<img width="300" height="300" alt="image" src="models/cameraV2.stl" />  <br>
 
 ### Overview
 - a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
