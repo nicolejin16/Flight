@@ -1,6 +1,17 @@
 # SN
 ---
 WRO documentation
+<div align="center">
+<img src="media/repository-photos/teambeesbanner.png/" alt="teambeesbanner">
+</div>
+
+
+<p align="center">
+  <img src="" /> </img>
+</p>
+
+<a href="YouTube link"><img src="" height="20" alt="name of YouTube link">
+
 # Introduction
 Team Flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using hardware such as a LiDAR, Raspberry Pi 5, and new technology introduced to us like the Arduino Nano.
 
@@ -34,7 +45,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Nicole - nicolejin27@gmail.com</h3>
       <p style="margin-top:8px;">
-        <b>About Me:</b> My Name is Nicole, I am 15 years old. I am a figure skater and I also do badminton and track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
+        <b>About Me:</b> My Name is Nicole, I am 16 years old. I am a figure skater and I also do badminton and track and field for my school. I have been involved in coding and Explorer Robotics since I was 8 and did WRO Future Engineers last year as well.
       </p>
     </td>
   </tr>
@@ -52,7 +63,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
     <td width="72%" style="padding:12px 16px;">
       <h3 style="margin:0 0 6px 0;">Summer - summerlyu@gmail.com</h3>
       <p style="margin-top:8px;">
-        <b>About Me:</b> My name is Summer, I am 16 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
+        <b>About Me:</b> My name is Summer, I am 17 years old. I love figure skating and drawing. I also do badminton, alpine skiing, and track and field for school. I starting coding when I was twelve years old and this is my second year doing WRO Future Engineers. 
       </p>
     </td>
   </tr>
@@ -404,14 +415,14 @@ The 7.4V gives good acceleration without noticeable voltage drop and offers stab
 
 
 ### Additional information
-- Voltage: 7.4V  
-- Capacity: 1300mAh  
-- Discharge Rate: 45C Continuous / 90C Peak  
-- Charge Rate: 5C (6.5A Max)  
-- Cell Configuration: 2S1P  
-- Watt Hours: 9.62Wh  
+- Voltage: **7.4V**  
+- Capacity: **1300mAh**  
+- Discharge Rate: **45C Continuous / 90C Peak**  
+- Charge Rate: **5C (6.5A Max)**
+- Cell Configuration: **2S1P**  
+- Watt Hours: **9.62Wh**  
 
-The battery is secured to our robot by tape on the bottom. 
+The battery is secured to our robot by tape on the bottom. <br>
 [click here to return to links](#mobility)
 
 ---
@@ -433,8 +444,9 @@ The battery is secured to our robot by tape on the bottom.
 <br>
 
 Our Gens Ace 1300 mAh 7.4V  Lipo Battery provides plenty of power to our car as shown in the power ratings table above/ 
-This will ensure that all our properties will run smoothly and provide stable voltage for the Raspberry Pi, controller, sensors, and periherals. 
-
+This will ensure that all our properties will run smoothly and provide stable voltage for the Raspberry Pi, controller, sensors, and periherals. <br>
+**Estimated runtime (Active driving run):** 20-28 minutes <br>
+**Estimated runtime (Idle/bench testing):** 45-60 minutes <br> <br>
 ### Electrical wiring
 <div algn="center">
 <table>
@@ -594,7 +606,7 @@ The Raspberry Pi handles the LiDAR's mapping, vision processing, and path planni
 - Flash memory: **1MB**
 
 
-After we soldered the arduino, it was secured tightly to our robot using double sided tape on the USB ports of the raspberry pi. 
+After we soldered the arduino, it was secured tightly to our robot using double sided tape on the USB ports of the raspberry pi. <br>
 [click here to return to links](#mobility)
 
 ## LiDAR
@@ -646,7 +658,43 @@ After we soldered the arduino, it was secured tightly to our robot using double 
 # Extra
   
 ## Button
+<table>
+<tr>
+  <td valign="top" width="35%">
 
+ | Field          | Value                              |
+  |----------------|------------------------------------|
+  | **Product Title** |   2 Pin Panel Push Button |
+  | **Weight**        |            22.68 g                |
+  | **Size**          |     16.51 x 0.51 x 0.51 cm   |
+  |**Brand**          |   MakerSpot  |
+  | **Material**      |  tile |
+
+
+  </td>
+
+
+  <td width="65%" align="center">
+    <img width="300" height="300" alt="image" src="MaterialPhoto/button.jpg" /><br>
+    <em>2 pin push button</em>
+  </td>
+</tr>
+</table>
+
+  
+### Why we chose this product
+We chose this button for our raspberry Pi because it's very simple yet easy incorporate onto our robot. Since adding this button was a last minute detail, it's lightweight and small design allows an easy attachment without getting in the way of the other robot components. 
+ 
+
+---
+
+### Addtional information
+- Current rating: **50 milliamps**
+- Terminal: **solder**
+- Contact material: **copper**
+- Mounting type: **through hole mount**
+- Operating mode: **manual**
+  
 [click here to return to links](#mobility)
 ## Switch
 <table>
