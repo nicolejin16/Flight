@@ -758,6 +758,8 @@ We choose this switch because it was simple and easy to install. This switch is 
 | *Component that holds the camera up*| <br>
 <img width="300" height="300" alt="image" src="models/cameraV2.stl" />  <br>
 
+Full interactive models provided in the "models" file. <br>
+
 ### Overview
 - a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
 - Our 3D print held major components to the function of our robot like the arduino, raspberry pi, power regulator, camera, and liDar.
