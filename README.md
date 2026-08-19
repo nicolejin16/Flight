@@ -85,7 +85,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
 </div>
 
 </br>
-
+More team photos are provided in the "t-photos" folder. 
 ---
 
 
@@ -758,7 +758,7 @@ We choose this switch because it was simple and easy to install. This switch is 
 | *Component that holds the camera up*| <br>
 <img width="300" height="300" alt="image" src="models/cameraV2.stl" />  <br>
 
-Full interactive models provided in the "models" file. <br>
+Full interactive models provided in the "models" folder. <br>
 
 ### Overview
 - a main part of our project was the 3D print which allowed us to design and refine custom parts of our chassis for best results
