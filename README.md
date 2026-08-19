@@ -6,12 +6,6 @@ WRO documentation
 </div>
 
 
-<p align="center">
-  <img src="" /> </img>
-</p>
-
-<a href="YouTube link"><img src="" height="20" alt="name of YouTube link">
-
 # Introduction
 Team Flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using hardware such as a LiDAR, Raspberry Pi 5, and new technology introduced to us like the Arduino Nano.
 
@@ -818,7 +812,12 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 
 # Open Challenge
 ## Overview
-The Open Challenge is designed to test a robot’s ability to autonomously navigate a closed-loop course using only the black walls as guidance. The robot must detect walls, align itself, make smooth turns at corners, and complete 3 laps without manual intervention in under 3 minutes. The main focus is on path-following and code accuracy.
+The Open Challenge is designed to test a robot’s ability to autonomously navigate a closed-loop course using only the black walls as guidance. The robot must detect walls, align itself, make smooth turns at corners, and complete 3 laps without manual intervention in under 3 minutes. The main focus is on path-following and code accuracy. <br>
+
+Youtube Link: <a href="YouTube link"><img src="" height="20" alt="name of YouTube link"> <br>
+
+---
+
 ### Game Map
 
 <table>
@@ -1120,6 +1119,11 @@ The course for the open challenge can either be set up with a wide (100cm) or na
 # Obstacle Challenge 
 ## Overview
 The obstacle challenge is a much more difficult version of the open challenge. In this challenge, there are red and green traffic pillars that the car must navigate around, as well as a parking lot. A red pillar indicates that the car should turn right to pass the pillar, and a green pillar indicates a left turn to pass the pillar. The car starts in a straight section or parking lot (for extra points) and must navigate 3 laps around the track avoiding obstacles. Once the 3 laps are finished the car can perform a difficult parallel parking maneuver for additional points. The parking lot is 1.5x the length of the car. In our case the parking lot will be about 24.5cm.
+<br>
+Youtube Link: <a href="YouTube link"><img src="" height="20" alt="name of YouTube link"> <br>
+
+---
+
 ### Game Map
 <table>
   <tr>
