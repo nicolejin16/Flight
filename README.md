@@ -2,7 +2,7 @@
 ---
 WRO documentation
 <div align="center">
-<img src="" alt="teamflightbanner">
+<img src="t-photos/banner.jpeg" alt="teamflightbanner">
 </div>
 
 
@@ -75,7 +75,7 @@ Team Flight is a group of high-school students from Ontario, Canada. This is our
   <tr>
     <td align="center" style="padding:14px;">
       <div style="border:2px dashed #FFC107; border-radius:10px; padding:24px; height:320px; display:flex; align-items:center; justify-content:center;">
-        <b><img width="1000" height="750" alt="image" src="" /></b>
+        <b><img width="1000" height="750" alt="image" src="t-photos/teamphoto.jpg" /></b>
       </div>
       <div style="margin-top:8px; color:#444;"><em>Team Flight</em></div>
     </td>
@@ -675,7 +675,7 @@ After we soldered the arduino, it was secured tightly to our robot using double 
 
 
   <td width="65%" align="center">
-    <img width="300" height="300" alt="image" src="MaterialPhoto/pushbutton.jpg" /><br>
+    <img width="300" height="300" alt="image" src="MaterialPhoto/PushButton.png" /><br>
     <em>2 pin push button</em>
   </td>
 </tr>
