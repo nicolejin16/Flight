@@ -875,8 +875,13 @@ TRIGGER_FRAMES = 5
 
 # Timing
 
-#corner_start_time = 0
-#MIN_CORNER_TIME = 5
+corner_start_time = 0
+MIN_CORNER_TIME = 2
+
+# IMU heading tracking
+last_heading_time = time.time()
+HEADING_INTERVAL = 1.0 # request heading from Arduino every 1 second
+imu_heading = 0.0
 
 # Handle debug mode
 n = len(sys.argv)
@@ -890,7 +895,7 @@ time.sleep(2)
 
 # Initialize the camera
 picam2 = Picamera2()
-picam2.preview_configuration.main.size = (640, 480)
+picam2.preview_configuration.main.size = (700, 480)
 picam2.preview_configuration.main.format = "RGB888"
 picam2.preview_configuration.controls.FrameRate = 30
 picam2.configure("preview")
@@ -899,28 +904,27 @@ picam2.start()
 
 center_servo = 90
 min_servo = 60
-max_servo = 140
+max_servo = 120
 
-# Proportional gain constant (tune this)
-Kp = 0.0075
+# Proportional gain constant 
+Kp = 0.009
 Kd = 0
 
 counter = 0
 
-# Color thresholds
 lower_black = np.array([0, 0, 0])
-upper_black = np.array([100, 100, 100])
+upper_black = np.array([180, 255, 100])
 
-lower_orange = np.array([0, 40, 130])
-upper_orange = np.array([60, 160, 255])
+lower_orange = np.array([88, 56, 107])
+upper_orange = np.array([116, 224, 255])
 
-lower_blue = np.array([100, 0, 0])
-upper_blue = np.array([255, 80, 80])
+lower_blue = np.array([0, 97, 88])
+upper_blue = np.array([19, 255, 255])
 # Regions of interest
-roiLeft = (20, 205, 200, 100)
-roiRight = (420, 205, 200, 100)
-roiOrange = (220, 240, 240, 50)
-roiBlue = (220, 240, 240, 50)
+roiLeft = (20, 220, 200, 80)
+roiRight = (500, 220, 200, 80)
+roiOrange = (220, 300, 240, 50)
+roiBlue = (220, 300, 240, 50)
 # Start motor
 send(b'@M1630\n')
 send(b'@S90\n')
@@ -934,10 +938,33 @@ last_blue_time = time.time()
 
 turning_angle = 0
 
-cooldown_seconds = 2.5
+cooldown_seconds = 3
 
 while True:
+    now = time.monotonic()
+    
     frame = picam2.capture_array()
+
+        # Periodically request IMU heading from Arduino
+    if time.time() - last_heading_time >= HEADING_INTERVAL:
+        send(b'@H\n')
+        last_heading_time = time.time()
+        time.sleep(0.02) # brief wait so response arrives before we read
+    # Read and process all incoming serial data
+    if arduino.in_waiting > 0:
+        try:
+            raw = arduino.read(arduino.in_waiting).decode('utf-8', errors='ignore')
+            for line in raw.splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    imu_heading = float(line)
+                    #print(f'[IMU Heading] {imu_heading:.2f}°')
+                except ValueError:
+                    pass # ignore any non-numeric lines
+        except Exception:
+            pass # silently ignore malformed or partial data
     
     if arduino.in_waiting > 0:
         arduino.read(arduino.in_waiting)
@@ -952,7 +979,8 @@ while True:
     # Process Left and Right ROIs
     for idx, (x, y, w, h) in zip(["Left", "Right"], [roiLeft, roiRight]):
         roi = frame[y:y+h, x:x+w]
-        mask = cv2.inRange(roi, lower_black, upper_black)
+        hsv = cv2.cvtColor(roi, cv2.COLOR_RGB2HSV)
+        mask = cv2.inRange(hsv, lower_black, upper_black)
         #full_mask = cv2.inRange(frame, lower_black, upper_black)
 
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -960,7 +988,7 @@ while True:
         total_area = 0
         for cnt in contours:
             area = cv2.contourArea(cnt)
-            if area > 100:
+            if area > 50:
                 offset_cnt = cnt + [x, y]
                 cv2.drawContours(frame, [offset_cnt], -1, (0, 255, 0), 2)
                 total_area += area
@@ -972,8 +1000,8 @@ while True:
 
     # === STATE MACHINE DRIVING ===
 
-    left_trigger = left_area < 550
-    right_trigger = right_area < 550
+    left_trigger = left_area < 100
+    right_trigger = right_area < 100
 
     # ==========================
     # STATE: WALL_FOLLOW
@@ -993,7 +1021,7 @@ while True:
         # Enter CORNER_TURN_:
         if trigger_count_left >= TRIGGER_FRAMES or trigger_count_right >= TRIGGER_FRAMES:
             state = State.CORNER_TURN
-            #corner_start_time = time.time()
+            corner_start_time = now
             send(b'@M1630\n')
         else:
             # Normal wall following (Pd-control)
@@ -1015,33 +1043,48 @@ while True:
     # STATE: CORNER_TURN
     # =========================
     elif state == State.CORNER_TURN:
-        #elapsed = time.time() - corner_start_time
+        elapsed = now - (corner_start_time if corner_start_time is not None else now)
         
-        # --- TURNING BEHAVIOR (you can tune this) ---
+        if trigger_count_right and trigger_count_left >= 5:
+            send(b'@S90\n')
+        
+        if trigger_count_right >= 5:
+            # turn RIGHT
+            #arduino.write(b'@M1550\n')
+            send(b'@S70\n')
+            turning_angle = 70
+            cv2.putText(frame, f"{turning_angle}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 255)) 
+            #print("turn right")
+            if left_area and right_area <= 50:
+                send(b'@S90\n')
+        
         if trigger_count_left >= 5:
             # turn LEFT
             #arduino.write('@M1550\n')
-            send(b'@S140\n')
-            turning_angle = 145
+            send(b'@S110\n')
+            turning_angle = 110
             cv2.putText(frame, f"{turning_angle}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 255)) 
             #print("turn left")
-
-        elif trigger_count_right >= 5:
-            # turn RIGHT
-            #arduino.write(b'@M1550\n')
-            send(b'@S60\n')
-            turning_angle = 60
-            cv2.putText(frame, f"{turning_angle}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 255)) 
-            #print("turn right")
+            if left_area and right_area <= 50:
+                send(b'@S90\n')
+                
+        if left_area and right_area <= 50:
+                send(b'@S110\n')
+            
+        
         
         # --- EXIT CONDITIONS ---
         recovered = False
+        time_ok = elapsed >= MIN_CORNER_TIME
 
-        if trigger_count_left >= 5:
+        if trigger_count_left >= 5 and time_ok:
             recovered = left_area > 1000
             
-        if trigger_count_right >= 5:
+        if trigger_count_right >= 5 and time_ok:
             recovered = right_area > 1000
+            
+        if left_area and right_area <= 50:
+                send(b'@S90\n')
 
         if recovered:
             state = State.WALL_FOLLOW
@@ -1049,18 +1092,19 @@ while True:
             trigger_side = None
             trigger_count_right = 0
             trigger_count_left = 0
-            #print("Exiting CORNER_TURN → WALL_FOLLOW")
+            #print("WALL_FOLLOW")
             send(b'@M1630\n')
 
         
         # === Orange Line Detection ===
     cv2.rectangle(frame, (roiOrange[0], roiOrange[1]), (roiOrange[0]+roiOrange[2], roiOrange[1]+roiOrange[3]), (0, 255, 255), 2)
     roi2 = frame[roiOrange[1]:roiOrange[1]+roiOrange[3], roiOrange[0]:roiOrange[0]+roiOrange[2]]
-    orange_mask = cv2.inRange(roi2, lower_orange, upper_orange)
-    #contours_orange, _ = cv2.findContours(orange_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    roi_orange = frame[roiOrange[1]:roiOrange[1]+roiOrange[3], roiOrange[0]:roiOrange[0]+roiOrange[2]]
+    hsv_orange = cv2.cvtColor(roi_orange, cv2.COLOR_RGB2HSV)
+    orange_mask = cv2.inRange(hsv_orange, lower_orange, upper_orange)
     orange_pixels = cv2.countNonZero(orange_mask)
 
-    if orange_pixels > 100:
+    if orange_pixels > 500:
         if not orange_line_detected and (time.time() - last_orange_time) > cooldown_seconds:
             orange += 1
             last_orange_time = time.time()
@@ -1078,11 +1122,12 @@ while True:
         
     cv2.rectangle(frame, (roiBlue[0], roiBlue[1]), (roiBlue[0]+roiBlue[2], roiBlue[1]+roiBlue[3]), (0, 255, 255), 2)
     roi2 = frame[roiBlue[1]:roiBlue[1]+roiBlue[3], roiBlue[0]:roiBlue[0]+roiBlue[2]]
-    blue_mask = cv2.inRange(roi2, lower_blue, upper_blue)
-    #contours_blue, _ = cv2.findContours(blue_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    roi_blue = frame[roiBlue[1]:roiBlue[1]+roiBlue[3], roiBlue[0]:roiBlue[0]+roiBlue[2]]
+    hsv_blue = cv2.cvtColor(roi_blue, cv2.COLOR_RGB2HSV)
+    blue_mask = cv2.inRange(hsv_blue, lower_blue, upper_blue)
     blue_pixels = cv2.countNonZero(blue_mask)
 
-    if blue_pixels > 80:
+    if blue_pixels > 400:
        if not blue_line_detected and (time.time() - last_blue_time) > cooldown_seconds:
             blue += 1
             last_blue_time = time.time()
@@ -1092,7 +1137,7 @@ while True:
         blue_line_detected = False
     if blue >= 12:
         counter += 1
-        if counter >= 250:
+        if counter >= 275:
             send(b"M1500")
             break
         
@@ -1100,6 +1145,8 @@ while True:
     
     # === Debug Output ===
     cv2.imshow("Contours", frame)
+    #cv2.imshow("orange", orange_mask)
+    #cv2.imshow("blue", blue_mask)
     cv2.putText(frame, f"{turning_angle}", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 20, (0, 255, 255)) 
         
     if cv2.waitKey(1) == ord('q'):
