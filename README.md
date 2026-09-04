@@ -815,7 +815,7 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 ## Overview
 The Open Challenge is designed to test a robot’s ability to autonomously navigate a closed-loop course using only the black walls as guidance. The robot must detect walls, align itself, make smooth turns at corners, and complete 3 laps without manual intervention in under 3 minutes. The main focus is on path-following and code accuracy. <br>
 
-Youtube Link: <a href="YouTube link"><img src="" height="20" alt="name of YouTube link"> <br>
+Youtube Link: <a href="YouTube link"><img src="" height="20" alt="https://youtu.be/M6A6o3CX_g0 "> <br>
 
 ---
 
