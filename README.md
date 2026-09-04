@@ -815,8 +815,9 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 ## Overview
 The Open Challenge is designed to test a robot’s ability to autonomously navigate a closed-loop course using only the black walls as guidance. The robot must detect walls, align itself, make smooth turns at corners, and complete 3 laps without manual intervention in under 3 minutes. The main focus is on path-following and code accuracy. Visit the Youtube video linked below for more in-depth information. <br>
 
-Youtube Link: <a href="https://youtu.be/M6A6o3CX_g0">Team Flight Open Challenge 2026 </a> 
-<img src="videos/OpenChallengeThumbnail.png" height="100" alt="Team Flight Open Challenge 2026"> <br>
+Youtube Link: <br>
+<img src="videos/OpenChallengeThumbnail.png" height="200" alt="Team Flight Open Challenge 2026"> <br>
+<a href="https://youtu.be/M6A6o3CX_g0">Team Flight Open Challenge 2026 </a> 
 
 ---
 
