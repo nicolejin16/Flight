@@ -781,29 +781,29 @@ We chose PLA because of it's easy accessibility and affordable cost, allowing qu
 <table>
   <tr>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-    <img width="563" height="750" alt="image" src="v-photos /front.jpeg" /><br/>
+    <img width="563" height="750" alt="image" src="v-photos/front.jpeg" /><br/>
       <em><strong>Front View </strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-      <img width="563" height="750" alt="image" src="v-photos /back.jpeg" /><br/>
+      <img width="563" height="750" alt="image" src="v-photos/back.jpeg" /><br/>
       <em><strong>Back view</strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-     <img width="563" height="750" alt="image" src="v-photos /top.jpeg" /><br/>
+     <img width="563" height="750" alt="image" src="v-photos/top.jpeg" /><br/>
       <em><strong>Top View</strong></em>
     </td>
   </tr>
   <tr>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-     <img width="563" height="750" alt="image" src="v-photos /left.jpeg" /><br/>
+     <img width="563" height="750" alt="image" src="v-photos/left.jpeg" /><br/>
       <em><strong>Left Side View</strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-      <img width="563" height="750" alt="image" src="v-photos /right.jpeg" /><br/>
+      <img width="563" height="750" alt="image" src="v-photos/right.jpeg" /><br/>
       <em><strong>Right Side View</strong></em>
     </td>
     <td align="center" style="border:1px solid #ddd; padding:15px;">
-      <img width="563" height="750" alt="image" src="v-photos /bottom.jpeg" /><br/>
+      <img width="563" height="750" alt="image" src="v-photos/bottom.jpeg" /><br/>
       <em><strong>Bottom View</strong></em>
     </td>
   </tr>
@@ -1163,8 +1163,16 @@ picam2.stop()
 
 ---
 ## Breakdown
-The course for the open challenge can either be set up with a wide (100cm) or narrow (60cm) configuration. In the wide setup, the black walls are spaced farther and therefore can make the robots ROI's readings more difficult to detect the walls. The narrow configuration creates the opposite problem, and the walls occupy too much of the camera. Our primary navigation for the open challenge is with the camera. The camera captures multiple frames per second and stays on track by the ROI's. The ROI's are small rectangles placed at the edge of both sides. There is also a rectangular ROI in the middle of the screen used to detected the orange and blue lines when the robot makes its way around the map so it can stop when the three laps has been completed. The code is under "# === Orange Line Detection ===". So the side ROI's are used to detect black pixels, and the middle one is coded to detect blue and orange pixels. 
+The course for the open challenge can either be set up with a wide (100cm) or narrow (60cm) configuration. In the wide setup, the black walls are spaced farther and therefore can make the robots ROI's readings more difficult to detect the walls. The narrow configuration creates the opposite problem, and the walls occupy too much of the camera. Our primary navigation for the open challenge is with the camera. The camera captures multiple frames per second and stays on track by the ROI's. The ROI's are small rectangles placed at the edge of both sides. There is also a rectangular ROI in the middle of the screen used to detected the orange and blue lines when the robot makes its way around the map so it can stop when the three laps has been completed. The code is under "# === Orange Line Detection ===". So the side ROI's are used to detect black pixels, and the middle one is coded to detect blue and orange pixels. Once it has detected 12 blue or orange lines, the robot it will begin a counter of 250 which is enough time to let the robot finish the corner turn and stop in the correct spot in the middle of the course where it begun. 
 
+## Modes
+In our open challenge, our robot switches between two different modes in order to help our robot navigate the course. 
+
+### Wall follow mode
+Wall follow mode is the mode that the robot is in for most of the course. Wall follow mode follows the black walls along the side in order to make our robot travel straight. The robot scans the camera to ensure that there is an equal amount of black pixels in each ROI on either side. This allows the robot to travel perfectly in the middle of the path and prevents and zigzag pattern that may affect the efficiency.  
+
+### Corner turn mode
+The robot changes into corner turn mode when it stops detecting black pixels in one of the ROI's but not the other. This is when the robot knows to start turning in the direction of the ROI that doesn't have black. It stays in this mode for 3 seconds before turning back into wall follow mode, or until it begins to detect black in both ROI's again. This allows it to switch back and forth between the modes along the course with ease. 
 
 # Obstacle Challenge 
 ## Overview
