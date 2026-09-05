@@ -374,6 +374,7 @@ Our car uses a real whieel drive (RWD), meaning that the motor's power is transm
 - Provides a stronger grip on surfaces such as the map. Since the rear of the robot has more weight, the back wheels get pressed down into the ground more, providing more traction and grip. 
 - The front wheels are used only for steering, this is so the car can turn more precisely aince theres no interference from the motor. 
 
+<img src="schemes/ModesDiagram.png"> <br>
 
 [click here to return to links](#mobility)
 # Power
@@ -1182,7 +1183,7 @@ The robot changes into corner turn mode when it stops detecting black pixels in 
 The obstacle challenge is a much more difficult version of the open challenge. In this challenge, there are red and green traffic pillars that the car must navigate around, as well as a parking lot. A red pillar indicates that the car should turn right to pass the pillar, and a green pillar indicates a left turn to pass the pillar. The car starts in a straight section or parking lot (for extra points) and must navigate 3 laps around the track avoiding obstacles. Once the 3 laps are finished the car can perform a difficult parallel parking maneuver for additional points. The parking lot is 1.5x the length of the car. In our case the parking lot will be about 24.5cm.
 <br>
 **Youtube Link:** <br>
-<img src="" height="200" alt="Team Flight Obstacle Challenge 2026"> <br>
+<img src="videos/ObstacleChallengeThumbnail.png" height="200" alt="Team Flight Obstacle Challenge 2026"> <br>
 <a href="https://youtu.be/huQXz39QLw0">Team Flight Obstacle Challenge 2026 </a> 
 
 ---
