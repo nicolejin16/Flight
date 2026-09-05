@@ -546,6 +546,9 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 
 The main part of our robot is the Raspberry Pi 5 and it controls the computer vision and LiDAR data interpretation. It is perfect for energy comsumption and processing power, making it suitable for running our Python codes for the open challenge and obstacle challenge. 
 
+### Parking
+We have planned on using the LiDAR for the parallel park section at the beginning and end of the obstacle challenge, but we haven't had the change to progress that far this year. We have the placement and layout for the use of the LiDAR and we will continue to work on its use and progression in the future. So, we are not going to be using the LiDAr for the obstacle challenge this year. 
+
 ---
 
 ### Addtional information
@@ -749,9 +752,9 @@ We choose this switch because it was simple and easy to install. This switch is 
 # 3D design and fabrication
 
 | *Component that holds the raspberry pi, arduino and power regulator* | <br>
-<img width="300" height="300" alt="image" src="models/raspi.stl" /> <br>
+<img width="300" height="300" alt="image" src="models/raspimodel.png" /> <br>
 | *Component that holds the camera up*| <br>
-<img width="300" height="300" alt="image" src="models/cameraV2.stl" />  <br>
+<img width="300" height="300" alt="image" src="models/cameramodel.png" />  <br>
 
 Full interactive models provided in the "models" folder. <br>
 
@@ -1178,7 +1181,9 @@ The robot changes into corner turn mode when it stops detecting black pixels in 
 ## Overview
 The obstacle challenge is a much more difficult version of the open challenge. In this challenge, there are red and green traffic pillars that the car must navigate around, as well as a parking lot. A red pillar indicates that the car should turn right to pass the pillar, and a green pillar indicates a left turn to pass the pillar. The car starts in a straight section or parking lot (for extra points) and must navigate 3 laps around the track avoiding obstacles. Once the 3 laps are finished the car can perform a difficult parallel parking maneuver for additional points. The parking lot is 1.5x the length of the car. In our case the parking lot will be about 24.5cm.
 <br>
-Youtube Link: <a href="YouTube link"><img src="" height="20" alt="name of YouTube link"> <br>
+Youtube Link: <br>
+<img src="" height="200" alt="Team Flight Obstacle Challenge 2026"> <br>
+<a href="https://youtu.be/huQXz39QLw0">Team Flight Obstacle Challenge 2026 </a> 
 
 ---
 
@@ -1192,3 +1197,9 @@ Youtube Link: <a href="YouTube link"><img src="" height="20" alt="name of YouTub
 </table>
 
 ## Code 
+## Breakdown
+The obstacle challenges uses the same system of counting the orange and blue lines around the course in order to stop in the right place. Since we are not going to be attempting the parallel park at the beginning and end, the robot is going to count to 250 and stop in the middle of the track, similar to the open challenge. 
+## Modes
+The obstacle challenge uses the same modes as the open challenge but it also incorporates a different mode called "Obstacle Avoid mode".  
+### Obstacle avoid mode
+The camera constantly scanning for red or green pillars that it detects into the camera. Once the camera detects 900 red or green pixels in frame, it is now considered an obstacle and the robot switches to obstacle avoid mode. It turns in the correct direction by controlling the servo motor to either go right around the red obstacle (it will stop  following the obstacle when it reaches an x value of 150 and a y value of 250) or left around the green one (when it reaches an x value of 550). It will go back to the either of the other modes once the obstacle is no longer detected.  
