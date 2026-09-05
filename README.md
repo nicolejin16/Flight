@@ -546,6 +546,9 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 
 The main part of our robot is the Raspberry Pi 5 and it controls the computer vision and LiDAR data interpretation. It is perfect for energy comsumption and processing power, making it suitable for running our Python codes for the open challenge and obstacle challenge. 
 
+### Parking
+We have planned on using the LiDAR for the parallel park section at the beginning and end of the obstacle challenge, but we haven't had the change to progress that far this year. We have the placement and layout for the use of the LiDAR and we will continue to work on its use and progression in the future. So, we are not going to be using the LiDAr for the obstacle challenge this year. 
+
 ---
 
 ### Addtional information
