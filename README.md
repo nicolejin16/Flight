@@ -1198,7 +1198,7 @@ Youtube Link: <br>
 
 ## Code 
 ## Breakdown
-The obstacle challenges uses the same system of counting the orange and blue lines around the course in order to stop in the right place. 
+The obstacle challenges uses the same system of counting the orange and blue lines around the course in order to stop in the right place. Since we are not going to be attempting the parallel park at the beginning and end, the robot is going to count to 250 and stop in the middle of the track, similar to the open challenge. 
 ## Modes
 The obstacle challenge uses the same modes as the open challenge but it also incorporates a different mode called "Obstacle Avoid mode".  
 ### Obstacle avoid mode
