@@ -749,9 +749,9 @@ We choose this switch because it was simple and easy to install. This switch is 
 # 3D design and fabrication
 
 | *Component that holds the raspberry pi, arduino and power regulator* | <br>
-<img width="300" height="300" alt="image" src="models/raspi.stl" /> <br>
+<img width="300" height="300" alt="image" src="models/raspimodel.png" /> <br>
 | *Component that holds the camera up*| <br>
-<img width="300" height="300" alt="image" src="models/cameraV2.stl" />  <br>
+<img width="300" height="300" alt="image" src="models/cameramodel.png" />  <br>
 
 Full interactive models provided in the "models" folder. <br>
 
@@ -1192,3 +1192,9 @@ Youtube Link: <a href="YouTube link"><img src="" height="20" alt="name of YouTub
 </table>
 
 ## Code 
+## Breakdown
+The obstacle challenges uses the same system of counting the orange and blue lines around the course in order to stop in the right place. 
+## Modes
+The obstacle challenge uses the same modes as the open challenge but it also incorporates a different mode called "Obstacle Avoid mode".  
+### Obstacle avoid mode
+The camera constantly scanning for red or green pillars that it detects into the camera. Once the camera detects 900 red or green pixels in frame, it is now considered an obstacle and the robot switches to obstacle avoid mode. It turns in the correct direction by controlling the servo motor to either go right around the red obstacle (it will stop  following the obstacle when it reaches an x value of 150 and a y value of 250) or left around the green one (when it reaches an x value of 550). It will go back to the either of the other modes once the obstacle is no longer detected.  
