@@ -374,9 +374,7 @@ Our car uses a real whieel drive (RWD), meaning that the motor's power is transm
 - Provides a stronger grip on surfaces such as the map. Since the rear of the robot has more weight, the back wheels get pressed down into the ground more, providing more traction and grip. 
 - The front wheels are used only for steering, this is so the car can turn more precisely aince theres no interference from the motor. 
 <br>
-**State Machine Diagram describing how our program works:**
-  <br>
-<img src="schemes/ModesDiagram.png"> <br>
+
 
 [click here to return to links](#mobility)
 # Power
@@ -1208,3 +1206,8 @@ The obstacle challenges uses the same system of counting the orange and blue lin
 The obstacle challenge uses the same modes as the open challenge but it also incorporates a different mode called "Obstacle Avoid mode".  
 ### Obstacle avoid mode
 The camera constantly scanning for red or green pillars that it detects into the camera. Once the camera detects 900 red or green pixels in frame, it is now considered an obstacle and the robot switches to obstacle avoid mode. It turns in the correct direction by controlling the servo motor to either go right around the red obstacle (it will stop  following the obstacle when it reaches an x value of 150 and a y value of 250) or left around the green one (when it reaches an x value of 550). It will go back to the either of the other modes once the obstacle is no longer detected.  
+
+**State Machine Diagram describing how our program works:**
+
+  <br>
+<img src="schemes/ModesDiagram.png"> <br>
