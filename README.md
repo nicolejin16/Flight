@@ -373,7 +373,9 @@ Our car uses a real whieel drive (RWD), meaning that the motor's power is transm
 - Better weight distribution. The front wheels handle all the steering, and the rear wheels help with propulsion, whith helps the car remain more balanced when accelerating and turning. 
 - Provides a stronger grip on surfaces such as the map. Since the rear of the robot has more weight, the back wheels get pressed down into the ground more, providing more traction and grip. 
 - The front wheels are used only for steering, this is so the car can turn more precisely aince theres no interference from the motor. 
-
+<br>
+**State Machine Diagram describing how our program works:**
+  <br>
 <img src="schemes/ModesDiagram.png"> <br>
 
 [click here to return to links](#mobility)
@@ -547,8 +549,7 @@ We chose the 5/Zero Camera Module because we can use the wide angle camera lens 
 
 The main part of our robot is the Raspberry Pi 5 and it controls the computer vision and LiDAR data interpretation. It is perfect for energy comsumption and processing power, making it suitable for running our Python codes for the open challenge and obstacle challenge. 
 
-### Parking
-We have planned on using the LiDAR for the parallel park section at the beginning and end of the obstacle challenge, but we haven't had the change to progress that far this year. We have the placement and layout for the use of the LiDAR and we will continue to work on its use and progression in the future. So, we are not going to be using the LiDAr for the obstacle challenge this year. 
+
 
 ---
 
@@ -636,6 +637,9 @@ After we soldered the arduino, it was secured tightly to our robot using double 
 ### Why we chose this product
 
  We are going to use the LDROBOT D500 LiDAR for obstacle challenge because it provides accurate range data in every direction up to 12 meters. We are also switching to use the LiDAR instead of the camera because it doesn't depend of good lighting to function properly. With its long scanning range, it can detect obstacles further away and then turn accordingly. 
+
+### Parking
+We have planned on using the LiDAR for the parallel park section at the beginning and end of the obstacle challenge, but we haven't had the change to progress that far this year. We have the placement and layout for the use of the LiDAR and we will continue to work on its use and progression in the future. So, we are not going to be using the LiDAr for the obstacle challenge this year. 
 
 ---
 
@@ -830,7 +834,7 @@ The Open Challenge is designed to test a robot’s ability to autonomously navig
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1054" height="400" alt="image" src="maps/openchallengemap.png"/>
+      <img width="1054" height="500" alt="image" src="maps/openchallengemap.png"/>
     </td>
   </tr>
 </table>
@@ -1181,7 +1185,7 @@ The robot changes into corner turn mode when it stops detecting black pixels in 
 # Obstacle Challenge 
 ## Overview
 The obstacle challenge is a much more difficult version of the open challenge. In this challenge, there are red and green traffic pillars that the car must navigate around, as well as a parking lot. A red pillar indicates that the car should turn right to pass the pillar, and a green pillar indicates a left turn to pass the pillar. The car starts in a straight section or parking lot (for extra points) and must navigate 3 laps around the track avoiding obstacles. Once the 3 laps are finished the car can perform a difficult parallel parking maneuver for additional points. The parking lot is 1.5x the length of the car. In our case the parking lot will be about 24.5cm.
-<br>
+<br> <br>
 **Youtube Link:** <br>
 <img src="videos/ObstacleChallengeThumbnail.png" height="200" alt="Team Flight Obstacle Challenge 2026"> <br>
 <a href="https://youtu.be/huQXz39QLw0">Team Flight Obstacle Challenge 2026 </a> 
@@ -1192,7 +1196,7 @@ The obstacle challenge is a much more difficult version of the open challenge. I
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1054" height="400" alt="image" src="maps/obstaclechallengemap.png"/>
+      <img width="1054" height="500" alt="image" src="maps/obstaclechallengemap.png"/>
     </td>
   </tr>
 </table>
