@@ -441,8 +441,21 @@ The battery is secured to our robot by tape on the bottom. <br>
 
 Our Gens Ace 1300 mAh 7.4V  Lipo Battery provides plenty of power to our car as shown in the power ratings table above/ 
 This will ensure that all our properties will run smoothly and provide stable voltage for the Raspberry Pi, controller, sensors, and periherals. <br>
-**Estimated runtime (Active driving run):** 20-28 minutes <br>
-**Estimated runtime (Idle/bench testing):** 45-60 minutes <br> <br>
+
+**Estimated runtime (Idle/bench testing):** 45-60 minutes 
+- The robot is stationary. The LiDAR is actively scanning, the camera is streaming, the Pi is idle or listening for commands, and the servo is holding its position.
+- Logic Load (i.e. camera, Pi, arduino): 1.2A @ 5V (6.0W)
+- Mechanical Load (i.e. servo): 0.1A @ 5V (0.5W)
+- Total Power Consumption: 6.5W <br>
+
+**Estimated runtime (Active driving run):** 20-28 minutes 
+- Logic load (Pi is working harder): 1.8A @5V (9.0W)
+- Mechanical Load (Motor moving + steering adjustments): 2.0A @ battery voltage (Avg. approx 18W)
+- Total Power Consumption: 27.0W <br>
+**Estimated runtime (Heavy/High Load):** 18-22 minutes 
+- Logic Load (using max Pi and camera utilization): 2.4A @ 5V (12.0W)
+- Mechanical Load (Heavy motor draw + hard servo cornering): 6.0A continuous average @ battery voltage (approx 55W - 65W)
+- Total Power Consumption: 72.0W <br> <br>
 ### Electrical wiring
 <div algn="center">
 <table>
