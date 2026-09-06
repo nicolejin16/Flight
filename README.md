@@ -5,7 +5,7 @@ WRO documentation
 <img src="t-photos/banner.jpeg" alt="teamflightbanner">
 </div>
 
-[WRO Engineering Journal 2026 - Nicole and Summer (PDF)](./Engineering%20Journal.pdf?raw=true)
+[WRO Engineering Journal 2026 - Nicole and Summer (PDF)](./Engineering%20Journal.pdf)
 
 # Introduction
 Team Flight is a group of high-school students from Ontario, Canada. This is our second year participating in WRO Future Engineers. We are passionate about robotics and is excited to compete in the open challenge and obstacle challenge for 2026. Our objective is to improve our score and documentation from last year and build a robot using hardware such as a LiDAR, Raspberry Pi 5, and new technology introduced to us like the Arduino Nano.
