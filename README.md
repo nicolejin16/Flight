@@ -462,7 +462,7 @@ This will ensure that all our properties will run smoothly and provide stable vo
 <table>
   <tr>
     <td style="border: 200px solid black; padding: 5px;">
-      <img width="1190" height="645"  src="schemes/wiring.jpeg" />
+      <img width="600" height="645"  src="schemes/wiring2.png.heic" />
     </td>
   </tr>
 </table>
