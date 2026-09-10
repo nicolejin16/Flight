@@ -135,6 +135,9 @@ static void handleCommand(char* command) {
     // TODO: Apply motor command here
     esc.writeMicroseconds(value);
     //Serial.write
+  } else if (type == 'L') {
+    if (value < 0 || value > 3) return;
+    SetRGBLED(value);
   }
 }
 
